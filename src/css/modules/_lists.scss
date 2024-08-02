@@ -73,15 +73,15 @@ dd {
 
     li {
         position: relative;
-        border-top: 1px solid var(--clr-brdr-lite);
-        border-bottom: 1px solid transparent;
+        border-block-start: 1px solid var(--clr-brdr-lite);
+        border-block-end: 1px solid transparent;
 
         &:nth-child(odd) {
             background: var(--clr-bkgd);
         }
 
         &:first-child {
-            border-top: 0;
+            border-block-start: 0;
         }
 
         &.active,
@@ -107,7 +107,7 @@ dd {
 
 @include setup.dark-mode {
     .switcher-list li {
-        border-top-color: var(--clr-brdr-x-lite);
+        border-block-start-color: var(--clr-brdr-x-lite);
     }
 }
 

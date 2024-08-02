@@ -9,8 +9,8 @@
 
 img,
 video {
-    max-width: 100%;
-    height: auto;
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 /**
@@ -90,10 +90,10 @@ img {
 }
 
 /**
- * Limit vertical height of fullsize images.
+ * Limit vertical block-size of fullsize images.
  */
 
 .fullsize-image .content-image {
-    max-height: 85vh;
+    max-block-size: 85vh;
     object-fit: contain;
 }

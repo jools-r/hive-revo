@@ -141,7 +141,7 @@ blockquote {
  */
 
 abbr[title] {
-    border-bottom: 0; /* 1 */
+    border-block-end: 0; /* 1 */
     text-decoration: underline dotted; /* 2 */
 }
 
@@ -238,7 +238,7 @@ code.excerpt {
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+ * Prevent `sub` and `sup` elements from affecting the line block-size in all browsers.
  */
 
 sub,
@@ -281,6 +281,6 @@ tfoot,
 }
 
 figcaption {
-    margin-top: 0.5em;
+    margin-block-start: 0.5em;
     font-style: italic;
 }

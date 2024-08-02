@@ -25,15 +25,15 @@ html {
 }
 
 .txp-setup {
-    max-width: setup.$setup-column;
+    max-inline-size: setup.$setup-column;
     margin: 1em auto;
 }
 
 .ui-icon {
     display: inline-block;
     position: relative;
-    width: 16px;
-    height: 16px;
+    inline-size: 16px;
+    block-size: 16px;
     overflow: hidden;
     background-size: 16px 16px;
     vertical-align: text-bottom;

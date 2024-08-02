@@ -29,8 +29,8 @@
     flex-flow: row wrap;
 
     .ui-controlgroup-item {
-        margin-right: 0;
-        margin-left: 0;
+        margin-inline-end: 0;
+        margin-inline-start: 0;
 
         &:focus,
         &.ui-visual-focus {
@@ -55,11 +55,11 @@
 .ui-controlgroup-horizontal {
     .ui-controlgroup-label {
         + .ui-controlgroup-item {
-            border-left: 0;
+            border-inline-start: 0;
         }
 
         &.ui-widget-content {
-            border-right: 0;
+            border-inline-end: 0;
         }
     }
 }
@@ -70,19 +70,19 @@
     .ui-controlgroup-item {
         display: block;
         box-sizing: border-box;
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
+        inline-size: 100%;
+        margin-block-start: 0;
+        margin-block-end: 0;
         text-align: start;
     }
 
     .ui-controlgroup-label {
         + .ui-controlgroup-item {
-            border-top: 0;
+            border-block-start: 0;
         }
 
         &.ui-widget-content {
-            border-bottom: 0;
+            border-block-end: 0;
         }
     }
 }
@@ -93,10 +93,10 @@
 
 .ui-controlgroup-vertical {
     .ui-spinner-input {
-        width: calc(100% - 2.4em);
+        inline-size: calc(100% - 2.4em);
     }
 
     .ui-spinner .ui-spinner-up {
-        border-top-style: solid;
+        border-block-start-style: solid;
     }
 }

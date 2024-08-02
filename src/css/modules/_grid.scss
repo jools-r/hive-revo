@@ -17,7 +17,7 @@
  * Generate sizes all for grid column cells.
  *
  * Because this is desktop first, all cells span variations are defined
- * initially (1 column full width, 2 column, 4 column). We will then
+ * initially (1 column full inline-size, 2 column, 4 column). We will then
  * adjust them at various breakpoints.
  *
  * Example HTML:
@@ -75,7 +75,7 @@
  */
 
 .txp-layout-textbox {
-    max-width: setup.$text-column;
+    max-inline-size: setup.$text-column;
 }
 
 /* Inline grids
@@ -84,20 +84,20 @@
 /**
  * Inline grid type layouts.
  *
- * You should define a specific width for each .txp-grid-cell, either as a class
- * attribute or style attribute, otherwise the cell width stretches to the
+ * You should define a specific inline-size for each .txp-grid-cell, either as a class
+ * attribute or style attribute, otherwise the cell inline-size stretches to the
  * content within it.
  *
  * Example HTML:
  *
  * <div class="txp-grid">
- *     <div class="txp-grid-cell" style="width:30em;">
+ *     <div class="txp-grid-cell" style="inline-size:30em;">
  *         Content
  *     </div>
- *     <div class="txp-grid-cell" style="width:15em;">
+ *     <div class="txp-grid-cell" style="inline-size:15em;">
  *         Content
  *     </div>
- *     <div class="txp-grid-cell" style="width:15em;">
+ *     <div class="txp-grid-cell" style="inline-size:15em;">
  *         Content
  *     </div>
  * </div>
@@ -147,7 +147,7 @@
     left: 1px;
     padding: 3px 6px;
     border: 1px solid var(--clr-brdr-lite);
-    border-top: 0;
-    border-left: 0;
+    border-block-start: 0;
+    border-inline-start: 0;
     background-color: hsl(0 0% 100% / 0.5);
 }

@@ -141,7 +141,7 @@ li.information {
         display: inline-block;
         position: relative;
         box-sizing: border-box;
-        max-width: 100%;
+        max-inline-size: 100%;
         margin: 0 auto;
         padding: 0.3076923em 3.5384615em 0.3076923em 0.6153846em;
 
@@ -184,7 +184,7 @@ li.information {
 @include setup.dark-mode {
     #messagepane .messageflash {
         border: 1px solid var(--clr-brdr-x-dark);
-        border-bottom: 0;
+        border-block-end: 0;
 
         &.success {
             background: var(--clr-success-bkgd);
@@ -211,14 +211,14 @@ li.information {
     position: absolute;
     right: 0;
     bottom: 0.5em;
-    width: 2.5384615em;
-    border-left: 1px solid hsl(0 0% 100% / 0.66);
+    inline-size: 2.5384615em;
+    border-inline-start: 1px solid hsl(0 0% 100% / 0.66);
 
     span {
         position: absolute;
         top: 50%;
         right: 0.5625em; // 9px / 16px
-        margin-top: -8px;
+        margin-block-start: -8px;
         opacity: 0.66;
 
         &:hover {
@@ -253,8 +253,8 @@ li.information {
 [dir="rtl"] .close {
     right: auto;
     left: 0;
-    border-right: 1px solid hsl(0 0% 100% / 0.66);
-    border-left: 0;
+    border-inline-end: 1px solid hsl(0 0% 100% / 0.66);
+    border-inline-start: 0;
 
     span {
         right: auto;

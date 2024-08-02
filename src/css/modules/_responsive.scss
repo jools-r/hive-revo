@@ -53,10 +53,10 @@
      */
 
     .txp-header h1 {
-        width: 1.75em; // 28px / 16px
+        inline-size: 1.75em; // 28px / 16px
 
         a {
-            width: 1.75em; // 28px / 16px
+            inline-size: 1.75em; // 28px / 16px
         }
     }
 
@@ -82,8 +82,8 @@
             @include setup.hide-text;
 
             display: block;
-            width: 1.625em;
-            height: 1.625em;
+            inline-size: 1.625em;
+            block-size: 1.625em;
             background: url("../img/sprite.svg") no-repeat -8em 0;
             background-size: 13em 2em; // 208px / 16px + 32px / 16px
         }
@@ -96,7 +96,7 @@
     .txp-search {
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-top: 0;
+        margin-block-start: 0;
         float: none;
     }
 
@@ -110,7 +110,7 @@
 
     .txp-search-clear {
         flex: 1 0 auto;
-        width: 100%;
+        inline-size: 100%;
         margin: 0 0 0.5em;
         text-align: start;
     }
@@ -136,12 +136,12 @@
         flex-direction: row-reverse;
         align-items: flex-start;
         justify-content: space-between;
-        height: 4.5rem;
+        block-size: 4.5rem;
         inset: auto 0 0;
         margin: 0;
         padding: 0.25em 3em;
         border: 0;
-        border-top: 1px solid var(--clr-brdr-lite);
+        border-block-start: 1px solid var(--clr-brdr-lite);
 
         @if not setup.$flat-theme {
             box-shadow: 0 -0.2em 0.25em hsl(0 0% 0% / 0.15);
@@ -164,7 +164,7 @@
     #page-page,
     #page-form,
     #page-css {
-        padding-bottom: 4.5rem;
+        padding-block-end: 4.5rem;
 
         #messagepane {
             bottom: 4.5rem;
@@ -172,16 +172,16 @@
     }
 
     /**
-     * Restrict width of multiselect to avoid layout breakage.
+     * Restrict inline-size of multiselect to avoid layout breakage.
      */
 
     select[size],
     select[multiple] {
-        max-width: 17.875em; // 286px / 16px
+        max-inline-size: 17.875em; // 286px / 16px
 
         option {
             box-sizing: border-box;
-            width: 100%;
+            inline-size: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -243,7 +243,7 @@
      */
 
     .txp-header {
-        height: 2.625em; // 42px / 16px
+        block-size: 2.625em; // 42px / 16px
         padding: 0 1em; // 16px
     }
 
@@ -280,7 +280,7 @@
 
     .txp-header h1,
     .txp-view-site {
-        margin-top: 0.25em;
+        margin-block-start: 0.25em;
     }
 
     /**
@@ -295,8 +295,8 @@
         @include setup.hide-text;
 
         display: block;
-        width: 2em;
-        height: 2em;
+        inline-size: 2em;
+        block-size: 2em;
         margin: 0.25em 0.5em 0;
         padding: 0;
         float: left;
@@ -354,8 +354,8 @@
             z-index: 2;
             top: -0.5em; // 8px / 16px
             left: 4.375em; // 62px / 16px;
-            width: 1em;
-            height: 0.5em;
+            inline-size: 1em;
+            block-size: 0.5em;
             background: url("../img/sprite.svg") no-repeat -12em 0;
             background-size: 13em 2em; // 208px / 16px + 32px / 16px
 
@@ -369,10 +369,10 @@
     .txp-nav > ul > li {
         float: none;
         border: 0;
-        border-bottom: 1px solid hsl(0 0% 0% / 0.2);
+        border-block-end: 1px solid hsl(0 0% 0% / 0.2);
 
         &:first-child {
-            border-left: 0;
+            border-inline-start: 0;
         }
 
         > a,
@@ -401,7 +401,7 @@
 
     .dropdown-menu {
         position: static;
-        min-width: 0;
+        min-inline-size: 0;
         border: 0;
 
         @if setup.$border-radius > 0 {
@@ -467,7 +467,7 @@
         .txp-form-field-label,
         .txp-form-field-value {
             flex: none;
-            min-height: inherit;
+            min-block-size: inherit;
         }
     }
 
@@ -493,7 +493,7 @@
     }
 
     [type="file"] {
-        width: 100%;
+        inline-size: 100%;
     }
 
     /**
@@ -503,7 +503,7 @@
     .progress-meter {
         ol {
             display: block;
-            margin-bottom: 1em;
+            margin-block-end: 1em;
             text-align: start;
         }
 
@@ -523,22 +523,22 @@
      */
 
     .ui-tabs:not(.ui-tabs-vertical) .ui-tabs-nav {
-        height: auto;
-        border-bottom: 1px solid var(--clr-brdr-lite);
+        block-size: auto;
+        border-block-end: 1px solid var(--clr-brdr-lite);
 
         li {
             display: block;
-            height: auto;
+            block-size: auto;
             border: 1px solid var(--clr-brdr-lite);
-            border-bottom: 1px solid transparent;
+            border-block-end: 1px solid transparent;
 
             @if not setup.$flat-theme {
                 box-shadow: none;
             }
 
             &.ui-tabs-active {
-                margin-bottom: 0;
-                padding-bottom: 0;
+                margin-block-end: 0;
+                padding-block-end: 0;
             }
         }
     }
@@ -548,7 +548,7 @@
      */
 
     .ui-tabs:not(.ui-tabs-vertical) .ui-tabs-panel {
-        border-top-width: 0;
+        border-block-start-inline-size: 0;
     }
 
     /**
@@ -560,7 +560,7 @@
     [dir="rtl"] .txp-actions-inline,
     [dir="rtl"] .txp-edit .txp-actions-inline {
         position: static;
-        margin-top: 0;
+        margin-block-start: 0;
         float: none;
     }
 

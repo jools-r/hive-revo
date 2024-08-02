@@ -9,7 +9,7 @@
 
 meter {
     box-sizing: border-box;
-    height: 8px;
+    block-size: 8px;
     overflow: hidden;
     border: 1px solid var(--clr-brdr);
     background: var(--clr-bkgd-box);

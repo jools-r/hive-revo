@@ -4,12 +4,12 @@
    ========================================================================== */
 
 /**
- * 1. Address width being affected by wide descendants in Chrome, Edge, Firefox.
+ * 1. Address inline-size being affected by wide descendants in Chrome, Edge, Firefox.
  * 2. Define consistent fieldset border, margin, and padding.
  */
 
 fieldset {
-    min-width: 0; /* 1 */
+    min-inline-size: 0; /* 1 */
     margin: 1em 0; /* 2 */
     padding: 1px 1em; /* 2 */
     border: 1px solid var(--clr-brdr); /* 2 */
@@ -50,7 +50,7 @@ textarea,
 .navlink-active,
 .navlink-disabled {
     box-sizing: border-box;
-    max-width: 100%; /* 1 */
+    max-inline-size: 100%; /* 1 */
     margin: 0;
     color: var(--clr-text-form);
     font-family: inherit;
@@ -81,7 +81,7 @@ textarea,
 [type="week"],
 select,
 textarea {
-    height: 2.4375em; // 39px / 16px
+    block-size: 2.4375em; // 39px / 16px
     padding: 0.25em; // 4px / 16px
     border: 1px solid var(--clr-brdr);
 
@@ -140,7 +140,7 @@ textarea {
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-    height: auto;
+    block-size: auto;
 }
 
 /**
@@ -214,13 +214,13 @@ select {
 }
 
 /**
- * Override height and background set in a previous rule and allow auto height.
+ * Override block-size and background set in a previous rule and allow auto block-size.
  */
 
 select[size],
 select[multiple] {
     box-sizing: border-box;
-    height: auto;
+    block-size: auto;
     padding-inline-end: 0.25em; // 4px / 16px
     background-image: none;
     vertical-align: top;
@@ -234,12 +234,12 @@ select[multiple] {
 }
 
 /**
- * Override height set in rule above and restrict to one line field.
+ * Override block-size set in rule above and restrict to one line field.
  */
 
 select[size="0"],
 select[size="1"] {
-    height: 1.875em; // 30px / 16px
+    block-size: 1.875em; // 30px / 16px
 }
 
 /**
@@ -258,9 +258,9 @@ optgroup {
  */
 
 textarea {
-    width: 100%;
-    height: auto;
-    min-height: 3em;
+    inline-size: 100%;
+    block-size: auto;
+    min-block-size: 3em;
     vertical-align: top; /* 1 */
     tab-size: 4; /* 2 */
     resize: vertical; /* 3 */
@@ -275,7 +275,7 @@ textarea.code {
 }
 
 /**
- * Width display options for `input` fields.
+ * inline-size display options for `input` fields.
  *
  * Example HTML:
  *
@@ -287,35 +287,35 @@ textarea.code {
  */
 
 input[size="32"] {
-    width: 100%;
-    max-width: 24.375em; // 390px / 16px
+    inline-size: 100%;
+    max-inline-size: 24.375em; // 390px / 16px
 }
 
 input.input-large {
-    width: 100%;
+    inline-size: 100%;
 }
 
 input.input-medium {
-    width: 50%;
-    max-width: 11.75em; // 188px / 16px
+    inline-size: 50%;
+    max-inline-size: 11.75em; // 188px / 16px
 }
 
 input.input-small {
-    width: 25%;
-    max-width: 6.1875em; // 99px / 16px
+    inline-size: 25%;
+    max-inline-size: 6.1875em; // 99px / 16px
 }
 
 input.input-xsmall {
-    width: 16%;
-    max-width: 3.4375em; // 55px / 16px
+    inline-size: 16%;
+    max-inline-size: 3.4375em; // 55px / 16px
 }
 
 input.input-number-max100 {
-    width: 3.25em; // 52px / 16px
+    inline-size: 3.25em; // 52px / 16px
 }
 
 /**
- * Width display options for date and time `input` fields.
+ * inline-size display options for date and time `input` fields.
  *
  * Note: These are intentionally *not* using the HTML5 input type contexts.
  *
@@ -350,7 +350,7 @@ input.input-number-max100 {
 
 input {
     &.input-year {
-        width: 4.075em; // 53px / 16px
+        inline-size: 4.075em; // 53px / 16px
         text-align: center;
     }
 
@@ -359,7 +359,7 @@ input {
     &.input-hour,
     &.input-minute,
     &.input-second {
-        width: 2.375em; // 32px / 16px
+        inline-size: 2.375em; // 32px / 16px
         text-align: center;
     }
 }

@@ -72,7 +72,7 @@
         display: block;
         margin: 0 0 1em;
         padding: 1px 0;
-        border-width: 1px 0;
+        border-inline-size: 1px 0;
         background: none;
     }
 }
@@ -84,12 +84,12 @@
 }
 
 .ui-tabs:not(.ui-tabs-vertical) .ui-tabs-nav {
-    height: 31px;
+    block-size: 31px;
 
     li {
         display: inline-block;
-        height: 30px;
-        border-bottom-width: 0;
+        block-size: 30px;
+        border-block-end-inline-size: 0;
         list-style: none;
         white-space: nowrap;
 
@@ -98,8 +98,8 @@
         }
 
         &.ui-tabs-active {
-            margin-bottom: -1px;
-            padding-bottom: 1px;
+            margin-block-end: -1px;
+            padding-block-end: 1px;
 
             @if not setup.$flat-theme {
                 box-shadow: none;
@@ -134,29 +134,29 @@
 
 .ui-tabs-vertical {
     .ui-tabs-nav {
-        border-bottom: 1px solid var(--clr-brdr);
+        border-block-end: 1px solid var(--clr-brdr);
 
         li {
             display: block;
             border: 1px solid var(--clr-brdr);
-            border-bottom: 1px solid transparent;
+            border-block-end: 1px solid transparent;
         }
     }
 
     .ui-tabs-panel {
-        border-top-width: 0;
+        border-block-start-inline-size: 0;
     }
 }
 
 .txp-details .ui-tabs-nav {
-    border-bottom: 0;
+    border-block-end: 0;
 
     li {
-        border-right: 0;
-        border-left: 0;
+        border-inline-end: 0;
+        border-inline-start: 0;
 
         &:first-child {
-            border-top: 0;
+            border-block-start: 0;
         }
     }
 }

@@ -12,7 +12,7 @@ $setup-column: 40.625em !default; // 650px / 16px
 $text-column: 50.375em !default; // 806px / 16px
 
 // layout grid (using desktop first in this project)
-$container-max-width: 94.5em !default; // 1512px / 16px
+$container-max-inline-size: 94.5em !default; // 1512px / 16px
 $break-large: 61.25em !default; // 980px / 16px (breakpoints are 16px = 1em measurements)
 $break-small: 47em !default; // 752px / 16px (breakpoints are 16px = 1em measurements)
 

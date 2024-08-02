@@ -9,7 +9,7 @@
  * Some classes and HTML elements generally added via JavaScript, more info -
  * https://jqueryui.com/button/
  *
- * 1. The `overflow` property removes extra width.
+ * 1. The `overflow` property removes extra inline-size.
  * 2. Correct font size not being inherited in all browsers.
  * 3. Remove iOS Safari default styling.
  * 4. Improve usability and consistency of cursor style between image-type
@@ -90,7 +90,7 @@ a.ui-button {
 /**
  * Single-icon-only button.
  *
- * To make room for the icon, a width needs to be set here.
+ * To make room for the icon, a inline-size needs to be set here.
  *
  * Example HTML:
  *
@@ -103,7 +103,7 @@ a.ui-button {
 
 .ui-button-icon-only {
     box-sizing: border-box;
-    width: 1.75em; // 28px / 16px
+    inline-size: 1.75em; // 28px / 16px
     text-indent: -9999px;
     white-space: nowrap;
 }
@@ -146,8 +146,8 @@ input.ui-button.ui-button-icon-only {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -8px;
-    margin-left: -8px;
+    margin-block-start: -8px;
+    margin-inline-start: -8px;
 }
 
 .ui-button.ui-icon-notext .ui-icon {

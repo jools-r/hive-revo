@@ -25,7 +25,7 @@
 .ui-resizable-handle,
 .ui-icon.ui-resizable-handle {
     position: absolute;
-    margin-bottom: 0;
+    margin-block-end: 0;
     font-size: 0.1px;
     touch-action: manipulation;
 }
@@ -46,63 +46,63 @@
 .ui-resizable-n {
     top: -5px;
     left: 0;
-    width: 100%;
-    height: 7px;
+    inline-size: 100%;
+    block-size: 7px;
     cursor: n-resize;
 }
 
 .ui-resizable-s {
     bottom: -5px;
     left: 0;
-    width: 100%;
-    height: 7px;
+    inline-size: 100%;
+    block-size: 7px;
     cursor: s-resize;
 }
 
 .ui-resizable-e {
     top: 0;
     right: -5px;
-    width: 7px;
-    height: 100%;
+    inline-size: 7px;
+    block-size: 100%;
     cursor: e-resize;
 }
 
 .ui-resizable-w {
     top: 0;
     left: -5px;
-    width: 7px;
-    height: 100%;
+    inline-size: 7px;
+    block-size: 100%;
     cursor: w-resize;
 }
 
 .ui-resizable-se {
     right: 1px;
     bottom: 1px;
-    width: 12px;
-    height: 12px;
+    inline-size: 12px;
+    block-size: 12px;
     cursor: se-resize;
 }
 
 .ui-resizable-sw {
     bottom: -5px;
     left: -5px;
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     cursor: sw-resize;
 }
 
 .ui-resizable-nw {
     top: -5px;
     left: -5px;
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     cursor: nw-resize;
 }
 
 .ui-resizable-ne {
     top: -5px;
     right: -5px;
-    width: 9px;
-    height: 9px;
+    inline-size: 9px;
+    block-size: 9px;
     cursor: ne-resize;
 }

@@ -5,8 +5,8 @@
 
 [type="file"] {
     box-sizing: border-box;
-    height: auto;
-    min-height: 1.875em; // 30px / 16px
+    block-size: auto;
+    min-block-size: 1.875em; // 30px / 16px
     padding: 0.25em; // 4px / 16px
     border: 1px solid var(--clr-brdr);
 

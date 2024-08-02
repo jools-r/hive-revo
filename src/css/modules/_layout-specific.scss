@@ -18,26 +18,26 @@
 }
 
 /**
- * Column width and margins of setup panels.
+ * Column inline-size and margins of setup panels.
  */
 
 .txp-setup {
-    max-width: setup.$setup-column;
+    max-inline-size: setup.$setup-column;
     margin: 1em auto;
 
-    // Column width of 'welcome' setup panel.
+    // Column inline-size of 'welcome' setup panel.
 
     .welcome & {
-        max-width: 16.5em; // 264px / 16px
+        max-inline-size: 16.5em; // 264px / 16px
     }
 }
 
 /**
- * Column width and margins of login panels.
+ * Column inline-size and margins of login panels.
  */
 
 .txp-login {
-    max-width: 20.5em; // 264px / 16px
+    max-inline-size: 20.5em; // 264px / 16px
     margin: 1em auto;
     padding: 1em 2em 1px;
 
@@ -66,17 +66,17 @@
         /* 2 */
         @include setup.hide-text;
 
-        width: 16.5em; // 264px / 16px
-        height: 3.375em; // 54px / 16px
-        margin-right: auto;
-        margin-left: auto;
+        inline-size: 16.5em; // 264px / 16px
+        block-size: 3.375em; // 54px / 16px
+        margin-inline-end: auto;
+        margin-inline-start: auto;
         background: url("../img/textpattern.svg") no-repeat;
         background-size: 16.5em 3.375em;
         font-size: 16px;
     }
 
     [type="submit"] {
-        width: 100%;
+        inline-size: 100%;
     }
 }
 
@@ -96,16 +96,16 @@ body.darkmode.login {
     bottom: -0.5em;
     padding: 1em 0;
     overflow: hidden;
-    border-top: 1px solid var(--clr-brdr);
+    border-block-start: 1px solid var(--clr-brdr);
     text-overflow: ellipsis;
 }
 
 /**
- * Welcome page `select` spans entire column width.
+ * Welcome page `select` spans entire column inline-size.
  */
 
 .welcome select {
-    width: 100%;
+    inline-size: 100%;
 }
 
 /* Content -> Categories panel - additional layout
@@ -116,7 +116,7 @@ body.darkmode.login {
  */
 
 #page-category .multi-edit {
-    margin-bottom: 1em;
+    margin-block-end: 1em;
 }
 
 /* Content -> Write panel - additional layout
@@ -140,14 +140,14 @@ body.darkmode.login {
     ul {
         margin: 2em 0 0;
         padding: 0;
-        border-bottom: 1px solid var(--clr-brdr);
+        border-block-end: 1px solid var(--clr-brdr);
         font-size: setup.$small-font-size;
         line-height: setup.$small-line-height;
     }
 
     li {
         display: inline-block;
-        height: 2.6363636em; // 29px / 11px
+        block-size: 2.6363636em; // 29px / 11px
     }
 
     a {
@@ -176,7 +176,7 @@ body.darkmode.login {
     }
 
     .active a {
-        border-bottom-color: var(--clr-bkgd);
+        border-block-end-color: var(--clr-bkgd);
         background-color: var(--clr-bkgd);
 
         @if not setup.$flat-theme {
@@ -185,7 +185,7 @@ body.darkmode.login {
 
         &:focus {
             border-color: var(--clr-focus);
-            border-bottom-color: var(--clr-bkgd);
+            border-block-end-color: var(--clr-bkgd);
         }
     }
 }
@@ -214,7 +214,7 @@ body.darkmode.login {
 
             &:focus {
                 border-color: var(--clr-focus);
-                border-bottom-color: var(--clr-bkgd);
+                border-block-end-color: var(--clr-bkgd);
             }
         }
     }
@@ -236,7 +236,7 @@ body.darkmode.login {
         }
 
         .title input {
-            width: 100%;
+            inline-size: 100%;
             font-size: 1.25rem; // 20px / 16px
             font-weight: 700;
         }
@@ -244,7 +244,7 @@ body.darkmode.login {
 
     .author small {
         display: block;
-        margin-top: -1em;
+        margin-block-start: -1em;
         color: var(--clr-text-demoted);
     }
 }
@@ -254,7 +254,7 @@ body.darkmode.login {
  */
 
 #expires-datetime-group {
-    margin-top: 0;
+    margin-block-start: 0;
 }
 
 /* Content -> Articles panel - additional layout
@@ -273,11 +273,11 @@ body.darkmode.login {
    ========================================================================== */
 
 .image-replace {
-    margin-bottom: 1em;
+    margin-block-end: 1em;
 }
 
 .edit-alter-thumbnail {
-    margin-bottom: 1.5em;
+    margin-block-end: 1.5em;
 }
 
 .edit-alter-thumbnail input {
@@ -296,7 +296,7 @@ body.darkmode.login {
 
 .thumbnail-image form {
     display: inline-block;
-    margin-top: 5px;
+    margin-block-start: 5px;
     vertical-align: top;
 }
 
@@ -332,7 +332,7 @@ body.darkmode.login {
    ========================================================================== */
 
 .presentation textarea.code {
-    height: 64vh;
+    block-size: 64vh;
 }
 
 /* Presentation -> Forms panel - additional layout
@@ -344,7 +344,7 @@ body.darkmode.login {
     margin-inline-end: 1em;
 
     input {
-        width: 11.75em; // 188px / 16px
+        inline-size: 11.75em; // 188px / 16px
     }
 }
 
@@ -370,11 +370,11 @@ tr:not(.active) {
 #preview-plugin,
 #preview-help,
 #preview-textpack {
-    height: 16vh;
+    block-size: 16vh;
     overflow: auto;
     resize: vertical;
 }
 
 .edit-plugin-code textarea {
-    height: 70vh;
+    block-size: 70vh;
 }

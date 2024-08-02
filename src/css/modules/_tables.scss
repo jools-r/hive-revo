@@ -38,7 +38,7 @@ table {
  */
 
 caption {
-    margin-bottom: 0.5em;
+    margin-block-end: 0.5em;
     text-align: start;
 }
 
@@ -111,7 +111,7 @@ td {
 
 .txp-list,
 .txp-list--no-options {
-    width: 100%;
+    inline-size: 100%;
 
     tbody {
         tr {
@@ -135,13 +135,13 @@ td {
             var(--clr-grad-to)
         );
 
-        border-top: 1px solid var(--clr-brdr-lite);
-        border-right: 1px solid var(--clr-brdr);
-        border-bottom: 1px solid var(--clr-brdr-dark);
-        border-left: 0;
+        border-block-start: 1px solid var(--clr-brdr-lite);
+        border-inline-end: 1px solid var(--clr-brdr);
+        border-block-end: 1px solid var(--clr-brdr-dark);
+        border-inline-start: 0;
 
         &:first-child {
-            border-left: 1px solid var(--clr-brdr);
+            border-inline-start: 1px solid var(--clr-brdr);
         }
 
         a {
@@ -163,15 +163,15 @@ td {
     .txp-list,
     .txp-list--no-options {
         thead th {
-            border-right-color: var(--clr-brdr-dark);
-            border-bottom-color: var(--clr-brdr-x-lite);
+            border-inline-end-color: var(--clr-brdr-dark);
+            border-block-end-color: var(--clr-brdr-x-lite);
 
             &:first-child {
-                border-left-color: var(--clr-brdr-x-lite);
+                border-inline-start-color: var(--clr-brdr-x-lite);
             }
 
             &:last-child {
-                border-right-color: var(--clr-brdr-x-lite);
+                border-inline-end-color: var(--clr-brdr-x-lite);
             }
 
             a {
@@ -214,8 +214,8 @@ td {
                 z-index: 10;
                 top: 45%;
                 right: 0.3125em; // 5px / 16px
-                width: 0;
-                height: 0;
+                inline-size: 0;
+                block-size: 0;
                 opacity: 0.6;
                 font-size: 16px;
 
@@ -233,25 +233,25 @@ td {
         &.desc a::after {
             content: "\2193";
             border: solid transparent;
-            border-width: 0.25em 0.25em 0;
-            border-top-color: var(--clr-text);
+            border-inline-size: 0.25em 0.25em 0;
+            border-block-start-color: var(--clr-text);
         }
 
         &.asc a::after {
             content: "\2191";
             border: solid transparent;
-            border-width: 0 0.25em 0.25em;
-            border-bottom-color: var(--clr-text);
+            border-inline-size: 0 0.25em 0.25em;
+            border-block-end-color: var(--clr-text);
         }
     }
 }
 
 /**
- * Consistent width for table multi-edit checkbox columns.
+ * Consistent inline-size for table multi-edit checkbox columns.
  */
 
 .txp-list-col-multi-edit {
-    width: 13px;
+    inline-size: 13px;
 }
 
 /**

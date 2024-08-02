@@ -21,9 +21,9 @@ progress {
 
 .txp-upload-progress {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 24.375em; // 390px / 16px
-    height: 8px;
+    inline-size: 100%;
+    max-inline-size: 24.375em; // 390px / 16px
+    block-size: 8px;
     border: 1px solid var(--clr-brdr);
     background-color: var(--clr-bkgd-box);
     appearance: none;

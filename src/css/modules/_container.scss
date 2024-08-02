@@ -14,7 +14,7 @@ body {
     position: relative; /* 1 */
     box-sizing: border-box;
     flex-direction: column;
-    min-height: 100vh;
+    min-block-size: 100vh;
     margin: 0; /* 2 */
     padding: 4em 4% 0;
     background: var(--clr-bkgd);
@@ -38,7 +38,7 @@ body {
 
 .txp-body {
     flex-grow: 1;
-    width: 100%;
-    max-width: setup.$container-max-width;
+    inline-size: 100%;
+    max-inline-size: setup.$container-max-inline-size;
     margin: 0 auto;
 }

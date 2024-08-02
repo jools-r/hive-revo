@@ -82,7 +82,7 @@
 
 .ui-datepicker {
     display: none;
-    width: 17em;
+    inline-size: 17em;
     padding: 0.2em 0.2em 0;
 
     @if not setup.$flat-theme {
@@ -98,9 +98,9 @@
     .ui-datepicker-next {
         position: absolute;
         top: 50%;
-        width: 1.8em;
-        height: 1.8em;
-        margin-top: -0.9em;
+        inline-size: 1.8em;
+        block-size: 1.8em;
+        margin-block-start: -0.9em;
 
         @if setup.$border-radius > 0 {
             border-radius: setup.$border-radius;
@@ -123,8 +123,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -8px;
-        margin-left: -8px;
+        margin-block-start: -8px;
+        margin-inline-start: -8px;
     }
 
     .ui-datepicker-prev-hover,
@@ -144,11 +144,11 @@
 
     select.ui-datepicker-month,
     select.ui-datepicker-year {
-        width: 45%;
+        inline-size: 45%;
     }
 
     table {
-        width: 100%;
+        inline-size: 100%;
         margin: 0 0 0.2em;
     }
 
@@ -178,13 +178,13 @@
     .ui-datepicker-buttonpane {
         margin: 0.7em 0 0;
         padding: 0 0.2em;
-        border-right: 0;
-        border-bottom: 0;
-        border-left: 0;
+        border-inline-end: 0;
+        border-block-end: 0;
+        border-inline-start: 0;
         background-image: none;
 
         button {
-            width: auto;
+            inline-size: auto;
             margin: 0.5em 0.2em 0.4em;
             padding: 0.2em 0.6em 0.3em;
             float: right; // TODO: Use `float: inline-end` when browser support is better.
@@ -209,7 +209,7 @@
  */
 
 .ui-datepicker.ui-datepicker-multi {
-    width: auto;
+    inline-size: auto;
 }
 
 .ui-datepicker-multi {
@@ -217,14 +217,14 @@
         float: left; // TODO: Use `float: inline-start` when browser support is better.
 
         table {
-            width: 95%;
+            inline-size: 95%;
             margin: 0 auto 0.4em;
         }
     }
 
     .ui-datepicker-group-last .ui-datepicker-header,
     .ui-datepicker-group-middle .ui-datepicker-header {
-        border-inline-start-width: 0;
+        border-inline-start-inline-size: 0;
     }
 
     .ui-datepicker-buttonpane {
@@ -233,19 +233,19 @@
 }
 
 .ui-datepicker-multi-2 .ui-datepicker-group {
-    width: 50%;
+    inline-size: 50%;
 }
 
 .ui-datepicker-multi-3 .ui-datepicker-group {
-    width: 33.3%;
+    inline-size: 33.3%;
 }
 
 .ui-datepicker-multi-4 .ui-datepicker-group {
-    width: 25%;
+    inline-size: 25%;
 }
 
 .ui-datepicker-row-break {
-    width: 100%;
+    inline-size: 100%;
     clear: both;
     font-size: 0;
 }

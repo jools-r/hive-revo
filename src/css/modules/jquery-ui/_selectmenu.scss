@@ -81,10 +81,10 @@
         overflow-x: hidden;
 
         .ui-selectmenu-optgroup {
-            height: auto;
+            block-size: auto;
             margin: 0.5em 0 0;
             padding: 2px 0.5em; // 8px / 16px
-            border-top: 1px solid var(--clr-brdr);
+            border-block-start: 1px solid var(--clr-brdr);
             font-size: 1rem;
             font-weight: 700;
             line-height: setup.$base-line-height;
@@ -121,7 +121,7 @@
 
 .no-ui-button {
     .ui-selectmenu-button {
-        height: auto;
+        block-size: auto;
         margin: 0;
         padding: 0;
         border: 0;

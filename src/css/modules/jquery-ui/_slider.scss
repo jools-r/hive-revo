@@ -12,7 +12,7 @@
  * Example HTML:
  *
  * <div class="ui-slider ui-slider-horizontal">
- *     <div class="ui-slider-range" style="left: 17%; width: 50%;"></div>
+ *     <div class="ui-slider-range" style="left: 17%; inline-size: 50%;"></div>
  *     <a class="ui-slider-handle" style="left: 17%;"></a>
  *     <a class="ui-slider-handle" style="left: 67%;"></a>
  * </div>
@@ -38,8 +38,8 @@
         position: absolute;
         z-index: 2;
         box-sizing: border-box;
-        width: 20px;
-        height: 20px;
+        inline-size: 20px;
+        block-size: 20px;
         border: 1px solid var(--clr-brdr-x-dark);
         border-radius: 50%;
 
@@ -93,17 +93,17 @@
  */
 
 .ui-slider-horizontal {
-    height: 12px;
-    margin-bottom: 1em;
+    block-size: 12px;
+    margin-block-end: 1em;
 
     .ui-slider-handle {
         top: -5px;
-        margin-left: -10px;
+        margin-inline-start: -10px;
     }
 
     .ui-slider-range {
         top: 0;
-        height: 100%;
+        block-size: 100%;
     }
 
     .ui-slider-range-min {
@@ -124,17 +124,17 @@
  */
 
 .ui-slider-vertical {
-    width: 12px;
-    height: 100px;
+    inline-size: 12px;
+    block-size: 100px;
 
     .ui-slider-handle {
         left: -20px;
-        margin-bottom: -10px;
+        margin-block-end: -10px;
     }
 
     .ui-slider-range {
         left: 0;
-        width: 100%;
+        inline-size: 100%;
     }
 
     .ui-slider-range-min {

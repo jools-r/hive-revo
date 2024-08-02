@@ -18,9 +18,9 @@
 .ui-icon {
     display: inline-block;
     position: relative;
-    width: 16px;
-    height: 16px;
-    margin-bottom: -2px;
+    inline-size: 16px;
+    block-size: 16px;
+    margin-block-end: -2px;
     overflow: hidden;
     background-size: 16px 16px;
     vertical-align: baseline;
@@ -28,14 +28,14 @@
 }
 
 .ui-icon-medium {
-    width: 24px;
-    height: 24px;
+    inline-size: 24px;
+    block-size: 24px;
     background-size: 24px 24px;
 }
 
 .ui-icon-large {
-    width: 32px;
-    height: 32px;
+    inline-size: 32px;
+    block-size: 32px;
     background-size: 32px 32px;
 }
 
@@ -53,7 +53,7 @@
 .ui-widget-icon-block {
     display: block;
     left: 50%;
-    margin-left: -8px;
+    margin-inline-start: -8px;
 }
 
 a.ui-icon,

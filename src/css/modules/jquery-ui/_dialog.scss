@@ -42,9 +42,9 @@
     top: 0;
     left: 0;
     flex-flow: column;
-    min-width: 300px;
-    max-width: 90vw;
-    max-height: 90vh;
+    min-inline-size: 300px;
+    max-inline-size: 90vw;
+    max-block-size: 90vh;
     padding: 0.2em;
     overflow: hidden;
     outline: 0;
@@ -60,7 +60,7 @@
     }
 
     .ui-dialog-title {
-        width: 90%;
+        inline-size: 90%;
         margin: 0.1em 0;
         float: left; // TODO: Use `float: inline-start` when browser support is better.
         overflow: hidden;
@@ -76,8 +76,8 @@
         position: absolute;
         top: 50%;
         right: 0.3em;
-        width: 20px;
-        height: 20px;
+        inline-size: 20px;
+        block-size: 20px;
         margin: -10px 0 0;
 
         [dir="rtl"] & {
@@ -90,7 +90,7 @@
         position: relative;
         box-sizing: border-box;
         flex: 1 1 auto;
-        min-width: 100%;
+        min-inline-size: 100%;
         padding: 0.5em 1em;
         overflow: auto;
         border: 0;
@@ -98,9 +98,9 @@
     }
 
     .ui-dialog-buttonpane {
-        margin-top: 0.5em;
+        margin-block-start: 0.5em;
         padding: 0.5em;
-        border-width: 1px 0 0;
+        border-inline-size: 1px 0 0;
         background-image: none;
         text-align: start;
     }

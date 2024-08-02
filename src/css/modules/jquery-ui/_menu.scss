@@ -117,9 +117,9 @@
     }
 
     .ui-menu-divider {
-        height: 0;
+        block-size: 0;
         margin: 0.25em 0; // 4px / 16px
-        border-width: 1px 0 0;
+        border-inline-size: 1px 0 0;
         font-size: 0;
         line-height: 0;
     }
@@ -155,7 +155,7 @@
     position: relative;
 
     .ui-menu-item-wrapper {
-        padding-left: 2em;
+        padding-inline-start: 2em;
     }
 }
 

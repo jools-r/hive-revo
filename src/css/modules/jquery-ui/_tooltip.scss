@@ -22,7 +22,7 @@
 .ui-tooltip {
     position: absolute;
     z-index: 9999;
-    max-width: 22em;
+    max-inline-size: 22em;
     padding: 0.5em 1em;
 
     @if not setup.$flat-theme {

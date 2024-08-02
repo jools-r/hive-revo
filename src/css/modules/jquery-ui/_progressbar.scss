@@ -12,12 +12,12 @@
  * Example HTML:
  *
  * <div class="ui-progressbar">
- *     <div class="ui-progressbar-value" style="width: 37%;"></div>
+ *     <div class="ui-progressbar-value" style="inline-size: 37%;"></div>
  * </div>
  */
 
 .ui-progressbar {
-    margin-bottom: 1em;
+    margin-block-end: 1em;
     overflow: hidden;
     background-color: var(--clr-bkgd-box);
     text-align: left;
@@ -30,7 +30,7 @@
 }
 
 .ui-progressbar-value {
-    height: 6px;
+    block-size: 6px;
     animation: progressbar-stripes linear 4s infinite;
     background-color: var(--clr-accent-grad-to);
     background-image: linear-gradient(
@@ -52,7 +52,7 @@
  * Example HTML:
  *
  * <div class="ui-progressbar ui-progressbar-indeterminate">
- *     <div class="ui-progressbar-value" style="width:100%;">
+ *     <div class="ui-progressbar-value" style="inline-size:100%;">
  *         <div class="ui-progressbar-overlay"></div>
  *     </div>
  * </div>

@@ -43,8 +43,8 @@ input[type="button"],
     );
 
     display: inline-block;
-    width: auto;
-    height: auto;
+    inline-size: auto;
+    block-size: auto;
     padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     border: 1px solid var(--clr-btn-brdr);
     border-radius: setup.$border-radius;
@@ -326,8 +326,7 @@ ul.nav-tertiary {
  */
 
 .txp-search button.txp-search-button {
-    padding-right: 1.5em;
-    padding-left: 1.5em;
+    padding-inline: 1.5em;
 
     @if setup.$border-radius > 0 {
         border-radius: 0;
