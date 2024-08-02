@@ -36,7 +36,7 @@
     background-clip: padding-box;
     color: var(--clr-text-btn);
     font-family: inherit;
-    font-size: 1rem; /* 2 */
+    font-size: inherit; /* 2 */
     line-height: setup.$base-line-height;
     vertical-align: baseline;
     text-align: center;

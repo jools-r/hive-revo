@@ -91,7 +91,6 @@ summary {
     @include setup.gradient-linear(var(--clr-grad-from), var(--clr-grad-to));
 
     position: relative;
-    height: 1.625em; // 26px / 16px
     margin: 0;
 
     @if not setup.$flat-theme {
@@ -123,9 +122,9 @@ summary {
  */
 
 .txp-details > h3:not(.txp-summary) {
-    padding: 0 0.8125em;
+    padding: 0 1em;
     overflow: hidden;
-    font-size: 0.8125em;
+    font-size: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
