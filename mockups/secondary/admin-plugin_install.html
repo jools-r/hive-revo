@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Verify plugin - My Site &#124; Textpattern CMS</title>
+    <script src="../../docs/assets/js/jquery.js"></script>
+    <script src="../../docs/assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" media="screen" href="../../dist/assets/css/textpattern.css">
+    <link rel="stylesheet" media="print" href="../dist/assets/css/print.css">
+    <link rel="alternate stylesheet" title="Hive (Flat Neutral)" href="../../dist/hiveneutral/assets/css/textpattern.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="generator" content="Textpattern CMS">
+    <script defer src="../../dist/assets/js/main.js"></script>
+    <script defer src="../../dist/assets/js/autosize.js"></script>
+
+    <script src="../../docs/assets/js/design-patterns.js"></script>
+
+</head>
+<body class="admin" id="page-plugin">
+    <noscript>Please enable JavaScript in your browser to use this application.</noscript>
+    <a class="txp-skip-link" href="#txp-main">Go to content</a>
+    <script src="../../dist/assets/js/darkmode.js"></script>
+
+    <header class="txp-header">
+        <h1>
+            <a href="#"><span>Textpattern</span></a>
+        </h1>
+
+        <button class="txp-nav-toggle collapsed" type="button" data-toggle="collapse" data-target="#txp-nav" aria-expanded="false" aria-controls="txp-nav">
+            <span class="txp-accessibility">Navigation</span>
+        </button>
+
+        <nav class="txp-nav" id="txp-nav" aria-label="Navigation">
+            <ul class="data-dropdown">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop1" role="button" aria-controls="txp-nav-drop1-menu" data-toggle="dropdown" href="#">
+                        Content
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop1-menu" role="menu" aria-labelledby="txp-nav-drop1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-article.html">Write</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-list.html">Articles</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-image.html">Images</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-file.html">Files</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-link.html">Links</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-category.html">Categories</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-discuss.html">Comments</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop2" role="button" aria-controls="txp-nav-drop2-menu" data-toggle="dropdown" href="#">
+                        Presentation
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop2-menu" role="menu" aria-labelledby="txp-nav-drop2">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-skin.html">Themes</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-section.html">Sections</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-page.html">Pages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-form.html">Forms</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-css.html">Styles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown selected">
+                    <a class="dropdown-toggle" id="txp-nav-drop3" role="button" aria-controls="txp-nav-drop3-menu" data-toggle="dropdown" href="#">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop3-menu" role="menu" aria-labelledby="txp-nav-drop3">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-diag.html">Diagnostics</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-prefs.html">Preferences</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-languages.html">Languages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-admin.html">Users</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-log.html">Visitor logs</a>
+                        </li>
+                        <li class="selected" role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-plugin.html">Plugins</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop4" role="button" aria-controls="txp-nav-drop4-menu" data-toggle="dropdown" href="#">
+                        Extensions
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop4-menu" role="menu" aria-labelledby="txp-nav-drop4">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Sektionsauswahl für stm_article_order</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 2</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 3</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 4</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="txp-view-site"><span class="txp-view-site-name"><a rel="noopener" target="_blank" title="View site" href="#">My site</a></span></p>
+        <p class="txp-lightswitch"><a id="lightswitch" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" href="#"><span class="ui-icon ui-icon-lightbulb">Toggle light/dark mode</span></a></p>
+        <p class="txp-logout"><a href="../login.html" onclick="return verify('Are you sure?')">Log out</a></p>
+
+    </header><!-- /txp-header -->
+
+    <main id="txp-main" class="txp-body">
+
+        <div id="messagepane"></div>
+
+        <form class="plugin-info" id="plugin_preview" method="post" action="../admin-plugin.html">
+            <h2>Plugin preview</h2>
+            <pre id="preview-help" class="language-php"><code class="language-php" dir="ltr">&lt;?php
+The plugin PHP code displays here.
+?&gt;</code></pre>
+            <h2>Plugin help</h2>
+            <pre id="preview-help" class="language-markup"><code class="language-markup" dir="ltr">&lt;h1&gt;Example heading&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
+&lt;p&gt;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code></pre>
+            <h2><bdi dir="ltr">Textpack</bdi></h2>
+            <pre id="preview-textpack"><code>The plugin Textpack displays here</code></pre>
+            <p class="txp-edit-actions">
+                <a class="txp-button" href="../admin-plugin.html">Cancel</a>
+                <input class="publish" type="submit" value="Install">
+            </p>
+        </form>
+
+    </main><!-- /txp-body -->
+
+    <footer class="txp-footer">
+        <p class="mothership"><a href="https://textpattern.com" rel="external" target="_blank">Textpattern CMS <span class="ui-icon ui-icon-extlink">(opens an external link in a new window)</span></a> (v4.9.x-dev)</p>
+    </footer><!-- /txp-footer -->
+
+    <script src="../../docs/assets/js/prism.js"></script>
+
+</body>
+</html>

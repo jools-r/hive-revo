@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Edit image - My Site &#124; Textpattern CMS</title>
+    <script src="../../docs/assets/js/jquery.js"></script>
+    <script src="../../docs/assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" media="screen" href="../../dist/assets/css/textpattern.css">
+    <link rel="stylesheet" media="print" href="../dist/assets/css/print.css">
+    <link rel="alternate stylesheet" title="Hive (Flat Neutral)" href="../../dist/hiveneutral/assets/css/textpattern.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="generator" content="Textpattern CMS">
+    <script defer src="../../dist/assets/js/main.js"></script>
+    <script defer src="../../dist/assets/js/autosize.js"></script>
+
+    <script src="../../docs/assets/js/design-patterns.js"></script>
+
+</head>
+<body class="content" id="page-image-edit">
+    <noscript>Please enable JavaScript in your browser to use this application.</noscript>
+    <a class="txp-skip-link" href="#txp-main">Go to content</a>
+    <script src="../../dist/assets/js/darkmode.js"></script>
+
+    <header class="txp-header">
+        <h1>
+            <a href="#"><span>Textpattern</span></a>
+        </h1>
+
+        <button class="txp-nav-toggle collapsed" type="button" data-toggle="collapse" data-target="#txp-nav" aria-expanded="false" aria-controls="txp-nav">
+            <span class="txp-accessibility">Navigation</span>
+        </button>
+
+        <nav class="txp-nav" id="txp-nav" aria-label="Navigation">
+            <ul class="data-dropdown">
+                <li class="dropdown selected">
+                    <a class="dropdown-toggle" id="txp-nav-drop1" role="button" aria-controls="txp-nav-drop1-menu" data-toggle="dropdown" href="#">
+                        Content
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop1-menu" role="menu" aria-labelledby="txp-nav-drop1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-article.html">Write</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-list.html">Articles</a>
+                        </li>
+                        <li class="selected" role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-image.html">Images</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-file.html">Files</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-link.html">Links</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-category.html">Categories</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../content-discuss.html">Comments</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop2" role="button" aria-controls="txp-nav-drop2-menu" data-toggle="dropdown" href="#">
+                        Presentation
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop2-menu" role="menu" aria-labelledby="txp-nav-drop2">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-skin.html">Themes</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-section.html">Sections</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-page.html">Pages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-form.html">Forms</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../presentation-css.html">Styles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop3" role="button" aria-controls="txp-nav-drop3-menu" data-toggle="dropdown" href="#">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop3-menu" role="menu" aria-labelledby="txp-nav-drop3">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-diag.html">Diagnostics</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-prefs.html">Preferences</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-languages.html">Languages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-admin.html">Users</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-log.html">Visitor logs</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="../admin-plugin.html">Plugins</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop4" role="button" aria-controls="txp-nav-drop4-menu" data-toggle="dropdown" href="#">
+                        Extensions
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop4-menu" role="menu" aria-labelledby="txp-nav-drop4">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Sektionsauswahl für stm_article_order</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 2</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 3</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 4</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="txp-view-site"><span class="txp-view-site-name"><a rel="noopener" target="_blank" title="View site" href="#">My site</a></span></p>
+        <p class="txp-lightswitch"><a id="lightswitch" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" href="#"><span class="ui-icon ui-icon-lightbulb">Toggle light/dark mode</span></a></p>
+        <p class="txp-logout"><a href="../login.html" onclick="return verify('Are you sure?')">Log out</a></p>
+
+    </header><!-- /txp-header -->
+
+    <main id="txp-main" class="txp-body">
+
+        <div id="messagepane"></div>
+
+        <div class="txp-layout">
+
+            <div class="txp-layout-4col-3span">
+                <h1 class="txp-heading">Edit image</h1>
+
+                <form method="post" action="#">
+                    <p>
+                        <button style="margin-bottom:0.33em;" name="img_crop"><span class="ui-icon ui-extra-icon-crop"></span> Crop</button>
+                        <button style="margin-bottom:0.33em;" name="img_rotate_l"><span class="ui-icon ui-icon-arrowreturn-1-s"></span> Rotate left</button>
+                        <button style="margin-bottom:0.33em;" name="img_rotate_r"><span class="ui-icon ui-extra-icon-arrowreturn-1-s-reversed"></span> Rotate right</button>
+                        <button style="margin-bottom:0.33em;" name="img_flip_h"><span class="ui-icon ui-extra-icon-flip-horizontal"></span> Flip horizontally</button>
+                        <button style="margin-bottom:0.33em;margin-right:1em;" name="img_flip_v"><span class="ui-icon ui-extra-icon-flip-vertical"></span> Flip vertically</button>
+                        <span style="display:inline-block;">
+                            <button style="margin-bottom:0.33em;" name="img_undo"><span class="ui-icon ui-icon-arrowrefresh-1-w"></span> Undo</button>
+                            <button style="margin-bottom:0.33em;" name="img_redo" disabled><span class="ui-icon ui-icon-arrowrefresh-1-e"></span> Redo</button>
+                        </span>
+                    </p>
+                    <section class="txp-details" id="txp-img-effects-group" aria-labelledby="txp-img-effects-group-label">
+                        <h3 class="txp-summary expanded" id="txp-img-effects-group-label">
+                            <a role="button" data-txp-pane="img_effects" href="#effects">Image effects</a>
+                        </h3>
+                        <div class="toggle txp-layout" id="txp-img-effects-group-content" role="group" style="padding-top:0.75em;padding-bottom:0.75em;">
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-4col">
+                                <label for="img_brightness">Brightness</label>
+                                <div class="txp-input-range">
+                                    <input id="img_brightness_range" type="range" min="0" max="100" value="80">
+                                    <input class="input-number-max100" id="img_brightness" type="number" min="0" max="100" value="80">
+                                </div>
+                            </div>
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-4col">
+                                <label for="img_contrast">Contrast</label>
+                                <div class="txp-input-range">
+                                    <input id="img_contrast_range" type="range" min="0" max="100" value="66">
+                                    <input class="input-number-max100" id="img_contrast" type="number" min="0" max="100" value="66">
+                                </div>
+                            </div>
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-4col">
+                                <label for="img_gamma">Gamma</label>
+                                <div class="txp-input-range">
+                                    <input id="img_gamma_range" type="range" min="0" max="100" value="0">
+                                    <input class="input-number-max100" id="img_gamma" type="number" min="0" max="100" value="0">
+                                </div>
+                            </div>
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-4col">
+                                <label for="img_sharpen">Sharpen</label>
+                                <div class="txp-input-range">
+                                    <input id="img_sharpen_range" type="range" min="0" max="100" value="0">
+                                    <input class="input-number-max100" id="img_sharpen" type="number" min="0" max="100" value="0">
+                                </div>
+                            </div>
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-4col">
+                                <label for="img_blur">Blur</label>
+                                <div class="txp-input-range">
+                                    <input id="img_blur_range" type="range" min="0" max="100" value="0">
+                                    <input class="input-number-max100" id="img_blur" type="number" min="0" max="100" value="0">
+                                </div>
+                            </div>
+                            <div style="margin-top:0.25em;margin-bottom:0.25em;" class="txp-layout-2col">
+                                Filter<br>
+                                <span style="display:inline-block;margin-top:0.4em;">
+                                    <input class="radio active" id="img_filter-0" name="img_filter" type="radio" value="0" checked="checked">
+                                    <label for="img_filter-0">None</label>
+                                    <input class="radio" id="img_filter-1" name="img_filter" type="radio" value="1">
+                                    <label for="img_filter-1">Greyscale</label>
+                                    <input class="radio" id="img_filter-2" name="img_filter" type="radio" value="1">
+                                    <label for="img_filter-2">Sepia</label>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+
+                <div class="fullsize-image">
+                    <img class="content-image" src="../img/1200x800.png" alt="1200×800px placeholder">
+                </div>
+
+                <span class="author"><small>
+                    ID# 1 <span role="separator">·</span>
+                    Uploaded on 03 Jul 2020 12:27:33 <span role="separator">·</span>
+                    Image format JPEG <span role="separator">·</span>
+                    File size 261KB <span role="separator">·</span>
+                    Current dimensions 1200×800 pixels
+                </small></span>
+
+                <form class="upload-form image-replace" method="post" action="#">
+                    <div class="txp-form-field file-uploader">
+                        <div class="txp-form-field-label"><label for="image-upload">Replace image&#160;<a class="pophelp" target="_blank" href="#" role="button" title="Help" rel="help"><span class="ui-icon ui-icon-help">Help</span></a></label></div>
+                        <div class="txp-form-field-value">
+                            <input name="thefile" type="file" required="required" id="image-upload">
+                            <span class="inline-file-uploader-actions">
+                                <input type="reset" value="Reset">
+                                <input type="submit" value="Upload">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+
+            </div><!-- /.txp-layout-4col-3span -->
+
+            <div class="txp-layout-4col">
+                <form id="image_details_form" method="post" action="#">
+
+                    <div class="txp-save-zone">
+                        <p class="txp-save">
+                            <span class="txp-save-button">
+                                <input class="publish" name="save" type="submit" value="Save">
+                            </span>
+                        </p>
+
+                        <p class="txp-actions">
+                            <a class="txp-clone" id="txp_clone" href="#"><span class="ui-icon ui-icon-copy" title="Duplicate">Duplicate</span> Duplicate</a>
+                            <a class="txp-clone error" id="txp_clone" href="#"><span class="ui-icon ui-icon-trash" title="Delete permanently">Delete permanently</span> Delete permanently</a>
+                        </p>
+                    </div>
+
+                    <section class="txp-details" id="image-details" aria-labelledby="image-details-label">
+                        <h3 id="image-details-label">Image details</h3>
+                        <div role="group">
+                            <div class="txp-form-field edit-image-name">
+                                <div class="txp-form-field-label"><label for="image_name">Image name</label></div>
+                                <div class="txp-form-field-value"><input id="image_name" name="name" type="text" size="32" value="child-with-carrots.jpg"></div>
+                            </div>
+                            <div class="txp-form-field edit-image-category">
+                                <div class="txp-form-field-label"><label for="image_category">Category</label></div>
+                                <div class="txp-form-field-value">
+                                    <select id="image_category" name="category">
+                                        <option value="">&#160;</option>
+                                        <option value="site-design" selected="selected">Site Design</option>
+                                    </select>
+                                    <a class="txp-option-link" href="#">Edit</a>
+                                </div>
+                            </div>
+                            <div class="txp-form-field edit-image-alt-text">
+                                <div class="txp-form-field-label"><label for="image_alt_text">Alternate text</label></div>
+                                <div class="txp-form-field-value"><input id="image_alt_text" name="alt" type="text" size="32" value="Child with carrots"></div>
+                            </div>
+                            <div class="txp-form-field txp-form-field-textarea edit-image-caption">
+                                <div class="txp-form-field-label"><label for="image_caption">Caption</label></div>
+                                <div class="txp-form-field-value"><textarea id="image_caption" name="caption" cols="64" rows="4">Example image with thumbnail</textarea></div>
+                            </div>
+                            <div class="txp-form-field edit-image-scale">
+                                <div class="txp-form-field-label"><label for="scale_width">Image scale</label></div>
+                                <div class="txp-form-field-value">
+                                    <input class="input-small" id="scale_width" name="width" type="number" size="4" min="1" max="2560" title="Width" aria-title="Width" value="1200">
+                                    ×
+                                    <input class="input-small" id="scale_height" name="height" type="number" size="4" min="1" max="2560" title="Height" aria-title="Height" value="800">
+                                    <input type="submit" value="Scale">
+                                </div>
+                            </div>
+                            <div class="txp-form-field edit-image-crop">
+                                <div class="txp-form-field-label"><label for="crop_width">Image crop</label></div>
+                                <div class="txp-form-field-value">
+                                    <input class="input-small" id="crop_width" name="width" type="number" size="4" min="1" max="2560" title="Width" aria-title="Width">
+                                    ×
+                                    <input class="input-small" id="crop_height" name="height" type="number" size="4" min="1" max="2560" title="Height" aria-title="Height">
+                                    <input type="submit" value="Crop">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div><!-- /.txp-layout-4col-alt -->
+
+        </div><!-- /.txp-layout -->
+    </main><!-- /txp-body -->
+
+    <footer class="txp-footer">
+        <p class="mothership"><a href="https://textpattern.com" rel="external" target="_blank">Textpattern CMS <span class="ui-icon ui-icon-extlink">(opens an external link in a new window)</span></a> (v4.9.x-dev)</p>
+    </footer><!-- /txp-footer -->
+
+</body>
+</html>

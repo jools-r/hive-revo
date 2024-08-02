@@ -1,0 +1,8 @@
+{
+  "title": "<theme-name>",
+  "txp-type": "textpattern-admin-theme",
+  "version": "<theme-version>",
+  "description": "<theme-description>",
+  "author": "<theme-author>",
+  "author_uri": "<theme-author-url>"
+}

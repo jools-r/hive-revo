@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Setup &#124; Textpattern CMS</title>
+    <script src="../../docs/assets/js/jquery.js"></script>
+    <script src="../../docs/assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" media="screen" href="../../dist/assets/css/textpattern.css">
+    <link rel="stylesheet" media="print" href="../dist/assets/css/print.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="generator" content="Textpattern CMS">
+    <script src="../../dist/assets/js/main.js"></script>
+
+    <script src="../../docs/assets/js/design-patterns.js"></script>
+
+</head>
+<body class="setup" id="page-setup">
+    <script src="../../dist/assets/js/darkmode.js"></script>
+
+    <main id="txp-main" class="txp-body">
+
+        <aside class="progress-meter">
+            <p class="txp-accessibility">There are 4 steps to this installation process:</p>
+            <ol>
+                <li>Set database details</li>
+                <li class="active" aria-current="step"><strong>Add config file</strong></li>
+                <li>Populate database</li>
+                <li>Go!</li>
+            </ol>
+        </aside>
+
+        <div class="txp-setup">
+
+            <h2>Checking database connection</h2>
+            <p class="alert-block success"><span class="ui-icon ui-icon-check"></span> Connected</p>
+            <p class="alert-block success"><span class="ui-icon ui-icon-check"></span> Using <strong>test2</strong> (utf8)</p>
+
+            <h2>Creating config.php file</h2>
+            <p><strong>Before you proceed:</strong> Create a file called <code>config.php</code> in the <code>/textpattern/</code> directory and paste the following inside&#8230;</p>
+            <p><a class="txp-button txp-config-download" download>Download</a></p>
+            <p><textarea class="code" name="config" cols="64" rows="12" dir="ltr" readonly><?php
+$txpcfg['db'] = 'test-mysql';
+$txpcfg['user'] = 'test-mysql';
+$txpcfg['pass'] = 'password1';
+$txpcfg['host'] = 'localhost';
+$txpcfg['table_prefix'] = '';
+$txpcfg['txpath'] = '/Users/johnqpublic/textpattern';
+$txpcfg['dbcharset'] = 'utf8';
+?></textarea></p>
+            <form action="setup4-database-populate.html" method="post">
+                <p><input class="publish" name="submit" type="submit" value="I did it"></p>
+            </form>
+
+        </div><!-- /txp-setup -->
+
+    </main><!-- /txp-body -->
+
+</body>
+</html>

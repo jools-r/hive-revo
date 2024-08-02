@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Update Languages - My Site &#124; Textpattern CMS</title>
+    <script src="../docs/assets/js/jquery.js"></script>
+    <script src="../docs/assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" media="screen" href="../dist/assets/css/textpattern.css">
+    <link rel="stylesheet" media="print" href="../dist/assets/css/print.css">
+    <link rel="alternate stylesheet" title="Hive (Flat Neutral)" href="../dist/hiveneutral/assets/css/textpattern.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="generator" content="Textpattern CMS">
+    <script defer src="../dist/assets/js/main.js"></script>
+    <script defer src="../dist/assets/js/autosize.js"></script>
+
+    <script src="../docs/assets/js/design-patterns.js"></script>
+
+</head>
+<body class="admin" id="page-lang">
+    <noscript>Please enable JavaScript in your browser to use this application.</noscript>
+    <a class="txp-skip-link" href="#txp-main">Go to content</a>
+    <script src="../dist/assets/js/darkmode.js"></script>
+
+    <header class="txp-header">
+        <h1>
+            <a href="#"><span>Textpattern</span></a>
+        </h1>
+
+        <button class="txp-nav-toggle collapsed" type="button" data-toggle="collapse" data-target="#txp-nav" aria-expanded="false" aria-controls="txp-nav">
+            <span class="txp-accessibility">Navigation</span>
+        </button>
+
+        <nav class="txp-nav" id="txp-nav" aria-label="Navigation">
+            <ul class="data-dropdown">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop1" role="button" aria-controls="txp-nav-drop1-menu" data-toggle="dropdown" href="#">
+                        Content
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop1-menu" role="menu" aria-labelledby="txp-nav-drop1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-article.html">Write</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-list.html">Articles</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-image.html">Images</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-file.html">Files</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-link.html">Links</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-category.html">Categories</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="content-discuss.html">Comments</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop2" role="button" aria-controls="txp-nav-drop2-menu" data-toggle="dropdown" href="#">
+                        Presentation
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop2-menu" role="menu" aria-labelledby="txp-nav-drop2">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="presentation-skin.html">Themes</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="presentation-section.html">Sections</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="presentation-page.html">Pages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="presentation-form.html">Forms</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="presentation-css.html">Styles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown selected">
+                    <a class="dropdown-toggle" id="txp-nav-drop3" role="button" aria-controls="txp-nav-drop3-menu" data-toggle="dropdown" href="#">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop3-menu" role="menu" aria-labelledby="txp-nav-drop3">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-diag.html">Diagnostics</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-prefs.html">Preferences</a>
+                        </li>
+                        <li class="selected" role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-languages.html">Languages</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-admin.html">Users</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-log.html">Visitor logs</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="admin-plugin.html">Plugins</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" id="txp-nav-drop4" role="button" aria-controls="txp-nav-drop4-menu" data-toggle="dropdown" href="#">
+                        Extensions
+                    </a>
+                    <ul class="dropdown-menu" id="txp-nav-drop4-menu" role="menu" aria-labelledby="txp-nav-drop4">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Sektionsauswahl für stm_article_order</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 2</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 3</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 4</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Extension 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="txp-view-site"><span class="txp-view-site-name"><a rel="noopener" target="_blank" title="View site" href="#">My site</a></span></p>
+        <p class="txp-lightswitch"><a id="lightswitch" title="Toggle light/dark mode" aria-label="Toggle light/dark mode" href="#"><span class="ui-icon ui-icon-lightbulb">Toggle light/dark mode</span></a></p>
+        <p class="txp-logout"><a href="login.html" onclick="return verify('Are you sure?')">Log out</a></p>
+
+    </header><!-- /txp-header -->
+
+    <main id="txp-main" class="txp-body">
+
+        <div id="messagepane"></div>
+
+        <div class="txp-layout">
+
+            <div class="txp-layout-1col">
+                <h1 class="txp-heading">Languages</h1>
+            </div>
+
+            <div class="txp-layout-1col" id="language_container">
+                <p class="txp-layout-textbox"><strong>You can help us improve Textpattern!</strong> We welcome additional translations (and corrections to current translations) by our user community. Please visit <a href="https://textpattern.com/languages" rel="external" target="_blank">Textpattern language translations <span class="ui-icon ui-icon-extlink">(opens an external link in a new window)</span></a> for further details.</p>
+
+                <div class="txp-control-panel">
+                    <form method="post" action="#">
+                        <label for="language">Site language</label>
+                        <select id="language" name="language">
+                            <option value="en" selected="selected">English</option>
+                            <option value="en-gb">English (British)</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </form>
+                    <form method="post" action="#">
+                        <label for="language-user">User language</label>
+                        <select id="language-user" name="language-user" autocomplete="language">
+                            <option value="en">English</option>
+                            <option value="en-gb" selected="selected">English (British)</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </form>
+                </div>
+
+                <ul class="txp-grid txp-grid-lang">
+                    <li class="txp-grid-cell txp-grid-cell-2span success">
+                        <form>
+                            <p>
+                                <span class="ui-icon ui-icon-check" role="status">Installed</span> <strong>English</strong><br>
+                                <code>en</code>
+                            </p>
+                            <p>
+                                <button type="submit" name="lang_update" disabled><span class="ui-icon ui-icon-refresh"></span> Update</button>
+                            </p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span success">
+                        <form>
+                            <p>
+                                <span class="ui-icon ui-icon-check" role="status">Installed</span> <strong>English (British)</strong><br>
+                                <code>en-gb</code>
+                            </p>
+                            <p>
+                                <button type="submit" name="lang_update" disabled><span class="ui-icon ui-icon-refresh"></span> Update</button>
+                                <button type="submit" name="lang_remove" ><span class="ui-icon ui-icon-minus"></span> Remove</button>
+                            </p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span warning">
+                        <form>
+                            <p>
+                                <span class="ui-icon ui-icon-alert" role="status">Installed <span role="separator">/</span> Update available</span> <strong>Français</strong><br>
+                                <code>fr</code>
+                            </p>
+                            <p>
+                                <button type="submit" name="lang_update"><span class="ui-icon ui-icon-refresh"></span> Update</button>
+                                <button type="submit" name="lang_remove"><span class="ui-icon ui-icon-minus"></span> Remove</button>
+                            </p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>العربية</strong><br>
+                                <code>ar</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>български</strong><br>
+                                <code>bg</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Bosanski</strong><br>
+                                <code>bs</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Català</strong><br>
+                                <code>ca</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Čeština</strong><br>
+                                <code>cs</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Cymraeg</strong><br>
+                                <code>cy</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Dansk</strong><br>
+                                <code>da</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Deutsch</strong><br>
+                                <code>de</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Ελληνικά</strong><br>
+                                <code>el</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>English (American)</strong><br>
+                                <code>en-us</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Español</strong><br>
+                                <code>es</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Eesti</strong><br>
+                                <code>et</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>فارسی</strong><br>
+                                <code>fa</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Suomi</strong><br>
+                                <code>fi</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Galego</strong><br>
+                                <code>gl</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>עברית</strong><br>
+                                <code>he</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>हिन्दी</strong><br>
+                                <code>hi</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Hrvatski</strong><br>
+                                <code>hr</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Magyar</strong><br>
+                                <code>hu</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Bahasa Indonesia</strong><br>
+                                <code>id</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                            <code>is</code><br>
+                            <strong>Íslenska</strong>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Italiano</strong><br>
+                                <code>it</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>日本語</strong><br>
+                                <code>ja</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>한국말 (대한민국)</strong><br>
+                                <code>ko</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Lietuvių</strong><br>
+                                <code>lt</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Latviešu</strong><br>
+                                <code>lv</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Norsk</strong><br>
+                                <code>nb</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Nederlands</strong><br>
+                                <code>nl</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Polski</strong><br>
+                                <code>pl</code>
+
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Português (Brasil)</strong><br>
+                                <code>pt-br</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Português</strong><br>
+                                <code>pt</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Română</strong><br>
+                                <code>ro</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Русский</strong><br>
+                                <code>ru</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Slovenčina</strong><br>
+                                <code>sk</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Српски</strong><br>
+                                <code>sr-rs</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Srpski</strong><br>
+                                <code>sr</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Svenska</strong><br>
+                                <code>sv</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>ภาษาไทย</strong><br>
+                                <code>th</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Türkçe</strong><br>
+                                <code>tr</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Українська</strong><br>
+                                <code>uk</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>اردو (بھارت</strong><br>
+                                <code>ur</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>Tiếng Việt</strong><br>
+                                <code>vi</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>中文(简体)</strong><br>
+                                <code>zh-cn</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                    <li class="txp-grid-cell txp-grid-cell-2span">
+                        <form>
+                            <p>
+                                <strong>中文(繁體)</strong><br>
+                                <code>zh-tw</code>
+                            </p>
+                            <p><button type="submit" name="lang_install"><span class="ui-icon ui-icon-plus"></span> Install</button></p>
+                        </form>
+                    </li>
+                </ul>
+
+                <h3>Install from Textpack</h3>
+
+                <div class="txp-control-panel">
+                    <form id="text_uploader" method="post" action="#">
+                        <label for="textpack-install">Install Textpack&#160;<a target="_blank" href="http://rpc.textpattern.com/help/?item=get_textpack&#38;language=en-gb" role="button" class="pophelp" title="Help" rel="help"><span class="ui-icon ui-icon-help">Help</span></a></label>
+                        <textarea class="code" id="textpack-install" name="textpack" cols="64" rows="4" dir="ltr"></textarea>
+                        <input type="submit" value="Upload" name="install_new">
+                    </form>
+                </div>
+
+            </div><!-- /txp-layout-1col -->
+        </div><!-- /.txp-layout -->
+    </main><!-- /txp-body -->
+
+    <footer class="txp-footer">
+        <p class="mothership"><a href="https://textpattern.com" rel="external" target="_blank">Textpattern CMS <span class="ui-icon ui-icon-extlink">(opens an external link in a new window)</span></a> (v4.9.x-dev)</p>
+    </footer><!-- /txp-footer -->
+
+</body>
+</html>

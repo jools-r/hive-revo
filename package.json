@@ -1,0 +1,69 @@
+{
+    "name": "Karaka",
+    "version": "2024.1",
+    "description": "Karaka Textpattern CMS admin theme",
+    "author": "Jools R",
+	"homepage": "https://github.com/jools-r/textpattern-karaka-admin-theme",
+    "license": "ISC",
+    "config": {
+        "dirs": {
+            "src": "./src",
+            "build": "./dist"
+        }
+    },
+    "targets": {
+        "default": {
+            "source": [
+                "./src/css/textpattern.scss",
+                "./src/css/print.scss",
+                "./src/js/main.js",
+                "./src/js/autosize.js",
+                "./src/js/darkmode.js"
+            ],
+            "distDir": "./dist/assets/"
+        }
+    },
+    "scripts": {
+		"buildmanifest": "jq --arg ver \"$npm_package_version\" --arg name \"$npm_package_name\" --arg desc \"$npm_package_description\" --arg author \"$npm_package_author\" --arg url \"$npm_package_homepage\" '.version = $ver | .title = $name | .description = $desc | .author = $author | .author_uri = $url' ./src/theme/manifest.json > $npm_package_config_dirs_build/manifest.json",
+        "clean": "rm -rf $npm_package_config_dirs_build && rm -rf .parcel-cache",
+        "minifyjs": "esbuild src/assets/js/main.js --minify --outfile=$npm_package_config_dirs_build/assets/js/main.js",
+        "prodcss": "sed -e '$ d' assets/css/textpattern.css > assets/css/textpattern.min.css",
+        "dev": "parcel watch",
+        "patterns": "parcel build --target docs",
+        "build": "parcel build && pnpm buildmanifest",
+        "prod": "pnpm run clean && parcel build --no-source-maps && pnpm buildmanifest"
+    },
+    "devDependencies": {
+        "@futureportal/parcel-transformer-package-version": "^1.0.0",
+        "@parcel/config-default": "^2.12.0",
+        "@parcel/resolver-glob": "^2.12.0",
+        "@parcel/transformer-sass": "^2.12.0",
+        "esbuild": "^0.21.5",
+        "parcel": "^2.12.0",
+        "parcel-reporter-clean-dist": "^1.0.4",
+        "parcel-reporter-static-files-copy": "^1.5.3",
+        "parcel-resolver-ignore": "^2.2.0"
+    },
+    "browserslist": ">= 0.25%, not dead",
+    "staticFiles": [
+        {
+            "staticPath": "./src/theme",
+            "staticOutPath": "./../"
+        },
+        {
+            "staticPath": "./src/assets",
+            "staticOutPath": "./"
+        }
+    ],
+    "parcelIgnore": [
+        "img/.+",
+        "icons/.+",
+        "fonts/.+"
+    ],
+    "@parcel/transformer-css": {
+        "drafts": {
+            "nesting": true,
+            "customMedia": true
+        }
+    }
+}
