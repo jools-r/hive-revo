@@ -1,0 +1,894 @@
+ignoreFiles:
+  - node_modules/**/*
+
+defaultSeverity: warning
+
+extends: stylelint-config-standard-scss
+
+plugins:
+  - stylelint-order
+
+rules:
+  # Specify percentage or number notation for alpha-values.
+  alpha-value-notation: number
+
+  # Disallow unknown annotations.
+  #annotation-no-unknown: true
+
+  # Specify a list of disallowed at-rules.
+  at-rule-disallowed-list:
+    - debug
+
+  # Require or disallow an empty line before at-rules.
+  at-rule-empty-line-before:
+    - always
+    - except:
+        - blockless-after-blockless
+        - first-nested
+      ignore:
+        - after-comment
+      ignoreAtRules:
+        - else
+
+  # Disallow unknown at-rules.
+  at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - at-root
+        - each
+        - else
+        - debug
+        - error
+        - extend
+        - for
+        - forward
+        - function
+        - if
+        - include
+        - mixin
+        - return
+        - use
+        - warn
+        - while
+
+  # Disallow vendor prefixes for at-rules.
+  at-rule-no-vendor-prefix: true
+
+  # Specify a whitelist of allowed at-rules.
+  #at-rule-whitelist:
+
+  # Disallow empty blocks.
+  block-no-empty: true
+
+  # Specify modern or legacy notation for applicable color-functions.
+  color-function-notation: modern
+
+  # Require or disallow alpha channel for hex colors.
+  #color-hex-alpha: never
+
+  # Specify short or long notation for hexadecimal color values.
+  color-hex-length: long
+
+  # Require (where possible) or disallow named colors.
+  color-named: never
+
+  # Disallow hex colors.
+  #color-no-hex: true
+
+  # Disallow invalid hexadecimal colors.
+  color-no-invalid-hex: true
+
+  # Require or disallow an empty line before comments.
+  #comment-empty-line-before:
+
+  # Disallow empty comments.
+  comment-no-empty: true
+
+  # Specify a pattern for comments.
+  #comment-pattern:
+
+  # Require or disallow whitespace on the inside of comment markers.
+  comment-whitespace-inside: always
+
+  # Specify a blacklist of disallowed words within comments.
+  #comment-word-blacklist:
+
+  # Specify a pattern for custom media query names.
+  #custom-media-pattern:
+
+  # Require or disallow an empty line before custom properties (Autofixable).
+  custom-property-empty-line-before: never
+
+  # Disallow missing `var` function for custom properties.
+  #custom-property-no-missing-var-function: true
+
+  # Specify a pattern for custom properties.
+  #custom-property-pattern:
+
+  # Disallow duplicate custom properties within declaration blocks.
+  declaration-block-no-duplicate-custom-properties: true
+
+  # Disallow duplicate properties within declaration blocks.
+  #declaration-block-no-duplicate-properties:
+
+  # Disallow longhand properties that can be combined into one shorthand property.
+  declaration-block-no-redundant-longhand-properties: true
+
+  # Disallow shorthand properties that override related longhand properties.
+  declaration-block-no-shorthand-property-overrides: true
+
+  # Limit the number of declaration within single line declaration blocks.
+  declaration-block-single-line-max-declarations: 1
+
+  # Require or disallow an empty line before declarations.
+  #declaration-empty-line-before:
+
+  # Disallow `!important` within declarations.
+  #declaration-no-important:
+
+  # Limit the number of values for a list of properties within declarations.
+  #declaration-property-max-values:
+
+  # Disallow unknown values for properties within declarations.
+  #declaration-property-value-no-unknown: true
+
+  # Specify a blacklist of disallowed property and unit pairs within declarations.
+  #declaration-property-unit-blacklist:
+
+  # Specify a whitelist of allowed property and unit pairs within declarations.
+  #declaration-property-unit-whitelist:
+
+  # Specify a blacklist of disallowed property and value pairs within declarations.
+  #declaration-property-value-blacklist:
+
+  # Specify a whitelist of allowed property and value pairs within declarations.
+  #declaration-property-value-whitelist:
+
+  # Disallow non-numeric values when interpolating a value with a unit.
+  #dimension-no-non-numeric-values
+
+  # Specify whether or not quotation marks should be used around font family names.
+  font-family-name-quotes: always-where-recommended
+
+  # Disallow duplicate font family names.
+  font-family-no-duplicate-names: true
+
+  # Disallow missing generic families in lists of font family names.
+  font-family-no-missing-generic-family-keyword: true
+
+  # Require numeric or named (where possible) `font-weight` values.
+  font-weight-notation: numeric
+
+  # Specify a blacklist of disallowed functions.
+  #function-blacklist:
+
+  # Disallow an invalid expression within `calc` functions.
+  #function-calc-no-invalid: true
+
+  # Disallow an unspaced operator within `calc` functions.
+  function-calc-no-unspaced-operator: true
+
+  # Disallow direction values in `linear-gradient()` calls that are not valid.
+  function-linear-gradient-no-nonstandard-direction: true
+
+  # Specify lowercase or uppercase for function names.
+  function-name-case: lower
+
+  # Disallow unknown functions.
+  #function-no-unknown: true
+
+  # Disallow scheme-relative URLs.
+  function-url-no-scheme-relative: true
+
+  # Require or disallow quotes for URLs.
+  function-url-quotes: always
+
+  # Specify a blacklist of disallowed URL schemes.
+  #function-url-scheme-blacklist:
+
+  # Specify a whitelist of allowed URL schemes.
+  #function-url-scheme-whitelist:
+
+  # Specify a whitelist of allowed functions.
+  #function-whitelist:
+
+  # Specify number or angle notation for degree hues.
+  hue-degree-notation: number
+
+  # Specify string or URL notation for `@import` rules.
+  #import-notation:
+
+  # Disallow duplicate selectors within keyframe blocks.
+  keyframe-block-no-duplicate-selectors: true
+
+  # Disallow `!important` within keyframe declarations.
+  keyframe-declaration-no-important: true
+
+  # Specify a pattern for keyframe names.
+  #keyframes-name-pattern:
+
+  # Specify keyword or percentage notation for keyframe selectors.
+  keyframe-selector-notation: percentage
+
+  # Disallow units for zero lengths.
+  length-zero-no-unit: true
+
+  # Limit the depth of nesting.
+  max-nesting-depth: 4
+
+  # Specify a blacklist of disallowed media feature names.
+  #media-feature-name-blacklist:
+
+  # Disallow unknown media feature names.
+  media-feature-name-no-unknown: true
+
+  # Disallow vendor prefixes for media feature names.
+  media-feature-name-no-vendor-prefix: true
+
+  # Specify a list of allowed name and unit pairs within media features.
+  #media-feature-name-unit-allowed-list:
+
+  # Disallow unknown values for media features.
+  #media-feature-name-value-no-unknown:
+
+  # Specify a whitelist of allowed media feature name and value pairs.
+  #media-feature-name-value-whitelist:
+
+  # Specify a whitelist of allowed media feature names.
+  #media-feature-name-whitelist:
+
+  # Specify context or prefix notation for media feature ranges.
+  media-feature-range-notation: prefix
+
+  # Disallow invalid media queries.
+  #media-query-no-invalid: true
+
+  # Disallow invalid named grid areas.
+  named-grid-areas-no-invalid: true
+
+  # Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
+  no-descending-specificity: null
+
+  # Disallow duplicate `@import` rules within a stylesheet.
+  no-duplicate-at-import-rules: true
+
+  # Disallow duplicate selectors within a stylesheet.
+  no-duplicate-selectors: null
+
+  # Disallow empty sources.
+  no-empty-source: true
+
+  # Disallow double-slash comments (`//`) which are not supported by CSS.
+  #no-invalid-double-slash-comments: true
+
+  # Disallow invalid position `@import` rules within a stylesheet.
+  no-invalid-position-at-import-rule:
+    - true
+    - ignoreAtRules:
+        - forward
+        - use
+
+  # Disallow irregular whitespaces.
+  no-irregular-whitespace: true
+
+  # Disallow unknown animations.
+  #no-unknown-animations:
+
+  # Disallow unknown custom properties.
+  #no-unknown-custom-properties:
+
+  # Limit the number of decimal places allowed in numbers.
+  number-max-precision: 7
+
+  # Specify a blacklist of disallowed properties.
+  #property-blacklist:
+
+  # Disallow unknown properties.
+  property-no-unknown:
+    - true
+    - ignoreProperties:
+        - contains-intrinsic-size
+
+  # Disallow vendor prefixes for properties.
+  property-no-vendor-prefix:
+    - true
+    - ignoreProperties:
+        - appearance
+
+  # Specify a whitelist of allowed properties.
+  #property-whitelist:
+
+  # Require or disallow an empty line before rules.
+  rule-empty-line-before:
+    - always-multi-line
+    - except:
+        - first-nested
+
+  # Specify a list of disallowed properties for selectors within rules.
+  #rule-selector-property-disallowed-list:
+
+  # Disallow unmatchable An+B selectors.
+  selector-anb-no-unmatchable: true
+
+  # Specify a list of disallowed attribute names.
+  #selector-attribute-name-disallowed-list:
+
+  # Specify a blacklist of disallowed attribute operators.
+  #selector-attribute-operator-blacklist:
+
+  #Specify a whitelist of allowed attribute operators.
+  #selector-attribute-operator-whitelist:
+
+  # Require or disallow quotes for attribute values.
+  selector-attribute-quotes: always
+
+  # Specify a pattern for class selectors.
+  selector-class-pattern: null
+
+  # Specify a blacklist of disallowed combinators.
+  #selector-combinator-blacklist:
+
+  # Specify a whitelist of allowed combinators.
+  #selector-combinator-whitelist:
+
+  # Specify a list of disallowed selectors.
+  #selector-disallowed-list:
+
+  # Specify a pattern for ID selectors.
+  selector-id-pattern: null
+
+  # Limit the number of attribute selectors in a selector.
+  selector-max-attribute: 2
+
+  # Limit the number of classes in a selector.
+  selector-max-class: 5
+
+  # Limit the number of combinators in a selector.
+  selector-max-combinators: 4
+
+  # Limit the number of compound selectors in a selector.
+  selector-max-compound-selectors: 5
+
+  # Limit the number of id selectors in a selector.
+  selector-max-id: 2
+
+  # Limit the number of pseudo-classes in a selector.
+  selector-max-pseudo-class: 3
+
+  # Limit the specificity of selectors.
+  selector-max-specificity: 2,2,1
+
+  # Limit the number of type in a selector.
+  selector-max-type: 4
+
+  # Limit the number of universal selectors in a selector.
+  selector-max-universal: 1
+
+  # Specify a pattern for the selectors of rules nested within rules.
+  #selector-nested-pattern:
+
+  # Disallow qualifying a selector by type.
+  #selector-no-qualifying-type: true
+
+  # Disallow vendor prefixes for selectors.
+  selector-no-vendor-prefix: true
+
+  # Specify simple or complex notation for `:not()` pseudo-class selectors.
+  selector-not-notation: complex
+
+  # Specify a blacklist of disallowed pseudo-class selectors.
+  #selector-pseudo-class-blacklist:
+
+  # Disallow unknown pseudo-class selectors.
+  selector-pseudo-class-no-unknown: true
+
+  # Specify a whitelist of allowed pseudo-class selectors.
+  #selector-pseudo-class-whitelist:
+
+  # Specify a blacklist of disallowed pseudo-element selectors.
+  #selector-pseudo-element-blacklist:
+
+  # Specify single or double colon notation for applicable pseudo-elements.
+  selector-pseudo-element-colon-notation: double
+
+  # Disallow unknown pseudo-element selectors.
+  selector-pseudo-element-no-unknown: true
+
+  # Specify a whitelist of allowed pseudo-element selectors.
+  #selector-pseudo-element-whitelist:
+
+  # Specify lowercase or uppercase for type selector.
+  selector-type-case: lower
+
+  # Disallow unknown type selectors.
+  selector-type-no-unknown: true
+
+  # Disallow redundant values in shorthand properties.
+  shorthand-property-no-redundant-values: true
+
+  # Disallow (unescaped) newlines in strings.
+  string-no-newline: true
+
+  # Specify the minimum number of milliseconds for time values.
+  time-min-milliseconds: 100
+
+  # Specify a blacklist of disallowed units.
+  #unit-blacklist:
+
+  # Disallow unknown units.
+  unit-no-unknown: true
+
+  # Specify a whitelist of allowed units.
+  #unit-whitelist:
+
+  # Specify lowercase or uppercase for keywords values.
+  value-keyword-case: null
+
+  # Disallow vendor prefixes for values.
+  value-no-vendor-prefix: true
+
+  # SMACSS-like property order rules (stylelint-order plugin).
+  order/properties-order:
+    # Heading.
+
+    - content
+
+    # Box.
+
+    - display
+    - visibility
+    - backface-visibility
+
+    - position
+    - z-index
+    - top
+    - right
+    - bottom
+    - left
+
+    - box-sizing
+
+    - grid
+    - gap
+    - grid-area
+    - grid-template
+    - grid-template-areas
+    - grid-template-columns
+    - grid-template-rows
+    - grid-auto-columns
+    - grid-auto-rows
+    - grid-auto-flow
+    - grid-column
+    - grid-column-start
+    - grid-column-end
+    - column-gap
+    - grid-row
+    - grid-row-start
+    - grid-row-end
+    - row-gap
+
+    - flex
+    - flex-basis
+    - flex-direction
+    - flex-flow
+    - flex-grow
+    - flex-shrink
+    - flex-wrap
+    - align-content
+    - align-items
+    - align-self
+    - justify-content
+    - justify-items
+    - justify-self
+    - place-content
+    - place-items
+    - place-self
+    - order
+
+    - width
+    - min-width
+    - max-width
+    - height
+    - min-height
+    - max-height
+
+    - writing-mode
+    - block-size
+    - min-block-size
+    - inline-size
+    - min-inline-size
+    - inset
+    - inset-block
+    - inset-block-start
+    - inset-block-end
+    - inset-inline
+    - inset-inline-start
+    - inset-inline-end
+    - object-fit
+    - object-position
+
+    - margin
+    - margin-collapse
+    - margin-top
+    - margin-top-collapse
+    - margin-right
+    - margin-right-collapse
+    - margin-bottom
+    - margin-bottom-collapse
+    - margin-left
+    - margin-left-collapse
+    - margin-block
+    - margin-block-start
+    - margin-block-end
+    - margin-inline
+    - margin-inline-start
+    - margin-inline-end
+
+    - padding
+    - padding-top
+    - padding-right
+    - padding-bottom
+    - padding-left
+    - padding-block
+    - padding-block-start
+    - padding-block-end
+    - padding-inline
+    - padding-inline-start
+    - padding-inline-end
+
+    - float
+    - clear
+
+    - overflow
+    - overflow-wrap
+    - overflow-x
+    - overflow-y
+
+    - clip
+    - clip-path
+    - zoom
+    - min-zoom
+    - max-zoom
+
+    - columns
+    - column-count
+    - column-gap
+    - column-fill
+    - column-rule
+    - column-rule-width
+    - column-rule-style
+    - column-rule-color
+    - column-span
+    - column-width
+
+    - table-layout
+    - empty-cells
+    - caption-side
+
+    # Manipulations.
+
+    - will-change
+
+    - transform
+    - transform-box
+    - transform-origin
+    - transform-style
+    - perspective
+    - perspective-origin
+    - translate
+
+    - rotate
+    - scale
+
+    - transition
+    - transition-property
+    - transition-duration
+    - transition-timing-function
+    - transition-delay
+
+    - perspective
+    - perspective-origin
+
+    - image-orientation
+    - image-rendering
+
+    - animation
+    - animation-name
+    - animation-duration
+    - animation-timing-function
+    - animation-delay
+    - animation-iteration-count
+    - animation-direction
+    - animation-fill-mode
+    - animation-play-state
+
+    # Border.
+
+    - border
+    - border-width
+    - border-style
+    - border-color
+    - border-spacing
+    - border-collapse
+    - border-top
+    - border-top-width
+    - border-top-style
+    - border-top-color
+    - border-right
+    - border-right-width
+    - border-right-style
+    - border-right-color
+    - border-bottom
+    - border-bottom-width
+    - border-bottom-style
+    - border-bottom-color
+    - border-left
+    - border-left-width
+    - border-left-style
+    - border-left-color
+    - border-radius
+    - border-top-left-radius
+    - border-top-right-radius
+    - border-bottom-right-radius
+    - border-bottom-left-radius
+    - border-block
+    - border-block-width
+    - border-block-style
+    - border-block-color
+    - border-block-start
+    - border-block-start-color
+    - border-block-start-style
+    - border-block-start-width
+    - border-block-end
+    - border-block-end-color
+    - border-block-end-style
+    - border-block-end-width
+    - border-inline
+    - border-inline-width
+    - border-inline-style
+    - border-inline-color
+    - border-inline-start
+    - border-inline-start-width
+    - border-inline-start-style
+    - border-inline-start-color
+    - border-inline-end
+    - border-inline-end-width
+    - border-inline-end-style
+    - border-inline-end-color
+    - border-start-start-radius
+    - border-start-end-radius
+    - border-end-start-radius
+    - border-end-end-radius
+    - border-image
+    - border-image-source
+    - border-image-width
+    - border-image-outset
+    - border-image-repeat
+    - border-image-slice
+
+    - outline
+    - outline-width
+    - outline-style
+    - outline-color
+    - outline-offset
+
+    - stroke
+    - stroke-width
+    - stroke-linecap
+    - stroke-dasharray
+    - stroke-dashoffset
+
+    # Background.
+
+    - opacity
+
+    - background
+    - background-attachment
+    - background-blend-mode
+    - background-clip
+    - background-color
+    - background-image
+    - background-origin
+    - background-position
+    - background-repeat
+    - background-size
+
+    - box-shadow
+    - mix-blend-mode
+    - isolation
+    - filter
+
+    - mask
+    - mask-clip
+    - mask-composite
+    - mask-image
+    - mask-mode
+    - mask-origin
+    - mask-position
+    - mask-repeat
+    - mask-size
+    - mask-type
+
+    - shape-image-threshold
+    - shape-margin
+    - shape-outside
+
+    - fill
+
+    # Text.
+
+    - color
+    - direction
+
+    - list-style
+    - list-style-position
+    - list-style-type
+    - list-style-image
+
+    - font
+    - font-effect
+    - font-emphasize
+    - font-emphasize-position
+    - font-emphasize-style
+    - font-family
+    - font-feature-settings
+    - font-kerning
+    - font-language-override
+    - font-optical-sizing
+    - font-size
+    - font-size-adjust
+    - font-smoothing
+    - font-stretch
+    - font-style
+    - font-synthesis
+    - font-variant
+    - font-variant-alternates
+    - font-variant-caps
+    - font-variant-east-asian
+    - font-variant-ligatures
+    - font-variant-numeric
+    - font-variant-position
+    - font-variation-settings
+    - font-weight
+    - letter-spacing
+    - line-break
+    - line-clamp
+    - line-height
+    - vertical-align
+    - hanging-punctuation
+    - hyphens
+    - orphans
+    - widows
+    - quotes
+    - speak
+    - speak-as
+    - src
+
+    - text-align
+    - text-align-last
+    - text-combine-upright
+    - text-decoration
+    - text-decoration-color
+    - text-decoration-line
+    - text-decoration-skip
+    - text-decoration-skip-ink
+    - text-decoration-style
+    - text-emphasis
+    - text-emphasis-color
+    - text-emphasis-style
+    - text-emphasis-position
+    - text-indent
+    - text-justify
+    - text-orientation
+    - text-outline
+    - text-overflow
+    - text-overflow-ellipsis
+    - text-overflow-mode
+    - text-rendering
+    - text-shadow
+    - text-size-adjust
+    - text-transform
+    - text-underline-position
+    - text-wrap
+
+    - unicode-bidi
+    - unicode-range
+    - word-wrap
+    - word-break
+    - word-spacing
+    - white-space
+    - tab-size
+
+    # Other.
+
+    - all
+    - appearance
+    - additive-symbols
+    - print-color-adjust
+
+    - counter-reset
+    - counter-increment
+    - range
+    - system
+    - negative
+    - symbols
+    - prefix
+    - suffix
+    - pad
+    - fallback
+
+    - box-decoration-break
+    - page-break-before
+    - break-before
+    - page-break-inside
+    - break-inside
+    - page-break-after
+    - break-after
+
+    - cursor
+    - caret-color
+    - pointer-events
+    - touch-action
+    - user-select
+    - user-zoom
+    - resize
+    - scroll-behavior
+    - scroll-margin
+    - scroll-margin-top
+    - scroll-margin-right
+    - scroll-margin-bottom
+    - scroll-margin-left
+    - scroll-margin-block
+    - scroll-margin-block-start
+    - scroll-margin-block-end
+    - scroll-margin-inline
+    - scroll-margin-inline-start
+    - scroll-margin-inline-end
+    - scroll-padding
+    - scroll-padding-top
+    - scroll-padding-right
+    - scroll-padding-bottom
+    - scroll-padding-block
+    - scroll-padding-left
+    - scroll-padding-block-start
+    - scroll-padding-block-end
+    - scroll-padding-inline
+    - scroll-padding-inline-start
+    - scroll-padding-inline-end
+    - scroll-snap-align
+    - scroll-snap-stop
+    - scroll-snap-type
+    - scrollbar-width
+    - scrollbar-color
+
+    - nav-index
+    - nav-up
+    - nav-right
+    - nav-down
+    - nav-left
+
+    - orientation
+    - size
+    - marks
+
+  # Additional SCSS rules (stylelint-scss plugin).
+
+  # Require or disallow whitespace after the colon in `$`-variable declarations.
+  scss/dollar-variable-colon-space-after: null
+
+  # Require an empty line or disallow empty lines before `$`-variable declarations.
+  scss/dollar-variable-empty-line-before:
+    - always
+    - except:
+        - first-nested
+        - after-comment
+        - after-dollar-variable
+
+  # Require or disallow an empty line before `//`-comments.
+  scss/double-slash-comment-empty-line-before: null
+
+  # Require or disallow whitespace after the `//` in `//`-comments
+  scss/double-slash-comment-whitespace-inside: null
+
+  # Disallow unspaced operators in Sass operations.
+  scss/operator-no-unspaced: null
