@@ -54,7 +54,7 @@ textarea,
     margin: 0;
     color: var(--clr-text-form);
     font-family: inherit;
-    font-size: 1rem; /* 2 */
+    font-size: 0.8125rem; /* 2 */
     line-height: setup.$base-line-height;
     vertical-align: baseline;
 }
@@ -64,6 +64,10 @@ textarea,
  *
  * 1. Remove browser-specific default styling.
  */
+
+label {
+    font-size: 0.8125em;
+}
 
 [type="color"],
 [type="date"],
@@ -81,8 +85,8 @@ textarea,
 [type="week"],
 select,
 textarea {
-    height: 2.3076923em; // 30px / 13px
-    padding: 0.3076923em; // 4px / 13px
+    height: 2.4375em; // 39px / 16px
+    padding: 0.25em; // 4px / 16px
     border: 1px solid var(--clr-brdr);
 
     @if setup.$border-radius > 0 {
@@ -157,7 +161,7 @@ textarea {
  */
 
 select {
-    padding-inline-end: 1.3076923em; // 17px / 13px
+    padding-inline-end: 1.0625em; // 17px / 16px
     background: var(--clr-bkgd-form)
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 4'%3E%3Cpolygon fill='%23777' points='3.5,4 0,0 7,0'/%3E%3C/svg%3E")
         right center no-repeat;
@@ -210,7 +214,7 @@ select {
  */
 
 [dir="rtl"] select {
-    background-position: 0.4615385em center; // 6px / 13px
+    background-position: 0.375em center; // 6px / 16px
 }
 
 /**
@@ -221,7 +225,7 @@ select[size],
 select[multiple] {
     box-sizing: border-box;
     height: auto;
-    padding-inline-end: 0.3076923em; // 4px / 13px
+    padding-inline-end: 0.25em; // 4px / 16px
     background-image: none;
     vertical-align: top;
 }
@@ -239,7 +243,7 @@ select[multiple] {
 
 select[size="0"],
 select[size="1"] {
-    height: 2.3076923em; // 30px / 13px
+    height: 1.875em; // 30px / 16px
 }
 
 /**
@@ -288,7 +292,7 @@ textarea.code {
 
 input[size="32"] {
     width: 100%;
-    max-width: 30em; // 390px / 13px
+    max-width: 24.375em; // 390px / 16px
 }
 
 input.input-large {
@@ -297,21 +301,21 @@ input.input-large {
 
 input.input-medium {
     width: 50%;
-    max-width: 14.4615385em; // 188px / 13px
+    max-width: 11.75em; // 188px / 16px
 }
 
 input.input-small {
     width: 25%;
-    max-width: 7.6153846em; // 99px / 13px
+    max-width: 6.1875em; // 99px / 16px
 }
 
 input.input-xsmall {
     width: 16%;
-    max-width: 4.2307692em; // 55px / 13px
+    max-width: 3.4375em; // 55px / 16px
 }
 
 input.input-number-max100 {
-    width: 4em; // 52px / 13px
+    width: 3.25em; // 52px / 16px
 }
 
 /**
@@ -350,7 +354,7 @@ input.input-number-max100 {
 
 input {
     &.input-year {
-        width: 4.0769231em; // 53px / 13px
+        width: 4.075em; // 53px / 16px
         text-align: center;
     }
 
@@ -359,7 +363,7 @@ input {
     &.input-hour,
     &.input-minute,
     &.input-second {
-        width: 2.4615385em; // 32px / 13px
+        width: 2.375em; // 32px / 16px
         text-align: center;
     }
 }

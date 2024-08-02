@@ -95,7 +95,7 @@ hr {
  */
 
 .txp-contain {
-    max-width: 30em; // 390px / 13px
+    max-width: 24.375em; // 390px / 16px
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -125,10 +125,10 @@ hr {
     display: none;
     position: absolute;
     z-index: 100;
-    width: 18em; // 234px / 13px
+    width: 14.625em; // 234px / 16px
 
     .checkbox {
-        margin: 0.1538462em; // 2px / 13px
+        margin: 0.125em; // 2px / 16px
     }
 }
 
@@ -349,6 +349,7 @@ hr {
  */
 
 .txp-actions > * {
+    font-size: 0.8125em;
     display: inline-block;
     margin: 0.5em 0 0;
     margin-inline-end: 1em;
@@ -375,7 +376,7 @@ hr {
  */
 
 :not(.txp-edit) .txp-actions-inline {
-    margin-top: 1.3076923em; // 17px / 13px
+    margin-top: 1.0625em; // 17px / 16px
     float: right; // TODO: Use `float: inline-end` when browser support is better.
 }
 
@@ -427,7 +428,7 @@ hr {
     z-index: 20;
     bottom: 0;
     margin: 1em 0 0;
-    padding: 0.3076923em 0; // 4px / 13px
+    padding: 0.25em 0; // 4px / 16px
     background: var(--clr-bkgd);
     box-shadow: 0 -1em 1em -0.5em var(--clr-bkgd);
 }
@@ -498,7 +499,7 @@ hr {
 
 .multi-option.multi-step {
     display: inline-block;
-    margin-inline-start: 0.3076923em; // 4px / 13px
+    margin-inline-start: 0.25em; // 4px / 16px
 }
 
 /**
@@ -510,6 +511,7 @@ hr {
  */
 
 .txp-option-link {
+    font-size: 0.8125em;
     display: inline-block;
     white-space: nowrap;
 }
@@ -538,7 +540,7 @@ hr {
  */
 
 .restricted-area {
-    font-size: 2rem; // 26px / 13px
+    font-size: 1.625rem; // 26px / 16px
     text-align: center;
 }
 
@@ -723,7 +725,7 @@ hr {
 
 .txp-form-field-label,
 .txp-form-field-value {
-    max-width: 30em; // 390px / 13px
+    max-width: 24.375em; // 390px / 16px
 }
 
 /**
@@ -767,7 +769,7 @@ hr {
     .txp-form-field-label,
     .txp-form-field-value {
         flex: 1 1 0%;
-        min-height: 2.3076923em; // 30px / 13px
+        min-height: 1.875em; // 30px / 16px
     }
 }
 
@@ -844,6 +846,7 @@ hr {
 
 .txp-textarea-preview {
     margin-inline-start: 1em;
+    font-size: 0.8125em; /* 13px / 16px */
 }
 
 /**

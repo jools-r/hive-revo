@@ -71,7 +71,7 @@ thead th {
 
 th,
 td {
-    padding: 0.3846154em 1em; // 5px / 13px + 13px
+    padding: 0.3125em 0.8125em; // 5px / 16px + 13px / 16px
     vertical-align: middle;
     text-align: start;
 }
@@ -147,8 +147,8 @@ td {
         a {
             display: block;
             position: relative;
-            margin: -0.3846154em -1em; // improved click area
-            padding: 0.3846154em 1em; // 5px / 13px + 13px
+            margin: -0.3125em -0.8125em; // improved click area
+            padding: 0.3125em 0.8125em; // 5px / 13px + 13px / 16px
             color: var(--clr-text);
 
             &:hover {

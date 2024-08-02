@@ -91,7 +91,7 @@ summary {
     @include setup.gradient-linear(var(--clr-grad-from), var(--clr-grad-to));
 
     position: relative;
-    height: 2em; // 26px / 13px
+    height: 1.625em; // 26px / 16px
     margin: 0;
 
     @if not setup.$flat-theme {
@@ -104,7 +104,7 @@ summary {
 
     font-size: 1rem;
     font-weight: 700;
-    line-height: 2; // 26px / 13px
+    line-height: 2;
 }
 
 @if not setup.$flat-theme {
@@ -123,8 +123,9 @@ summary {
  */
 
 .txp-details > h3:not(.txp-summary) {
-    padding: 0 1em;
+    padding: 0 0.8125em;
     overflow: hidden;
+    font-size: 0.8125em;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -144,6 +145,7 @@ h3.txp-summary a {
     padding-inline-end: 2em;
     overflow: hidden;
     color: var(--clr-text-promoted);
+    font-size: 0.8125em;
 
     &:hover {
         color: var(--clr-text-promoted);

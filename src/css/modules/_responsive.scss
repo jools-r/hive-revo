@@ -10,17 +10,17 @@
      */
 
     body {
-        padding: 4em 3em 0; // 52px + 39px
+        padding: 3.25em 2.4375em 0; // 52px / 16px + 39px / 16px
     }
 
     .setup,
     .login {
-        padding: 1em 3em 0; // 13px + 39px
+        padding: 0.8125em 2.4375em 0; // 13px / 16px + 39px / 16px
     }
 
     #messagepane {
-        right: 3em;
-        left: 3em;
+        right: 2.4375em;
+        left: 2.4375em;
     }
 
     /**
@@ -45,7 +45,7 @@
      */
 
     .txp-header {
-        padding: 0 3em; // 39px
+        padding: 0 2.4375em; // 39px / 16px
     }
 
     /**
@@ -76,14 +76,14 @@
         margin: 0.0625em 0.375em 0; // 1px / 16px + 6px / 16px;
         padding: 0;
         overflow: inherit;
-        font-size: 16px;
+        font-size: 0.8125em; // 13px / 16px
 
         a {
             @include setup.hide-text;
 
             display: block;
-            width: 2em;
-            height: 2em;
+            width: 1.625em;
+            height: 1.625em;
             background: url("../img/sprite.svg") no-repeat -8em 0;
             background-size: 13em 2em; // 208px / 16px + 32px / 16px
         }
@@ -177,7 +177,7 @@
 
     select[size],
     select[multiple] {
-        max-width: 22em; // 286px / 13px
+        max-width: 17.875em; // 286px / 16px
 
         option {
             box-sizing: border-box;

@@ -30,7 +30,7 @@
     position: relative;
     box-sizing: border-box;
     margin: 0;
-    padding: 0.3076923em 0.6153846em; // 4px / 13px + 8px / 13px
+    padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     overflow: visible; /* 1 */
     border: 1px solid var(--clr-btn-brdr);
     background-clip: padding-box;
@@ -103,7 +103,7 @@ a.ui-button {
 
 .ui-button-icon-only {
     box-sizing: border-box;
-    width: 2.1538462em; // 28px / 13px
+    width: 1.75em; // 28px / 16px
     text-indent: -9999px;
     white-space: nowrap;
 }

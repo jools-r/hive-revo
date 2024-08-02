@@ -28,7 +28,7 @@
     // Column width of 'welcome' setup panel.
 
     .welcome & {
-        max-width: 20.3076923em; // 264px / 13px
+        max-width: 16.5em; // 264px / 16px
     }
 }
 
@@ -37,7 +37,7 @@
  */
 
 .txp-login {
-    max-width: 20.3076923em; // 264px / 13px
+    max-width: 16.5em; // 264px / 16px
     margin: 1em auto;
     padding: 1em 2em 1px;
 
@@ -227,17 +227,17 @@ body.darkmode.login {
 #main_content {
     .text {
         input {
-            font-size: 1.2307692rem; // 16px / 13px
+            font-size: 1rem; // 16px / 16px
         }
 
         textarea {
-            font-size: 1.2307692rem; // 16px / 13px
+            font-size: 1rem; // 16px / 16px
             line-height: 1.5; // 24px / 16px
         }
 
         .title input {
             width: 100%;
-            font-size: 1.5384615rem; // 20px / 13px
+            font-size: 1.25rem; // 20px / 16px
             font-weight: 700;
         }
     }
@@ -344,7 +344,7 @@ body.darkmode.login {
     margin-inline-end: 1em;
 
     input {
-        width: 14.4615385em; // 188px / 13px
+        width: 11.75em; // 188px / 16px
     }
 }
 

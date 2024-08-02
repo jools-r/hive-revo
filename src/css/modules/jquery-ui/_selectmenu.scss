@@ -83,7 +83,7 @@
         .ui-selectmenu-optgroup {
             height: auto;
             margin: 0.5em 0 0;
-            padding: 2px 0.6153846em; // 8px / 13px
+            padding: 2px 0.5em; // 8px / 16px
             border-top: 1px solid var(--clr-brdr);
             font-size: 1rem;
             font-weight: 700;
@@ -128,6 +128,7 @@
         background: transparent;
         color: var(--clr-a);
         font-family: inherit;
+        font-size: inherit;
         cursor: pointer;
         user-select: auto;
 

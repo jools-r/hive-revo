@@ -97,28 +97,28 @@
 
         label {
             display: block;
-            margin: -0.3076923em -0.6153846em; // 4px / 13px + 8px / 13px
-            padding: 0.3076923em 0.6153846em; // 4px / 13px + 8px / 13px
-            padding-inline-start: 2em; // 26px / 13px
+            margin: -0.25em -0.5em; // 4px / 16px + 8px / 16px
+            padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
+            padding-inline-start: 1.625em; // 26px / 16px
             cursor: pointer;
 
             [type="checkbox"],
             [type="radio"] {
                 position: absolute;
                 bottom: initial;
-                left: 0.3076923em;
+                left: 0.25em;
             }
         }
     }
 
     .ui-menu-item-wrapper {
         position: relative;
-        padding: 0.3076923em 0.6153846em; // 4px / 13px + 8px / 13px
+        padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     }
 
     .ui-menu-divider {
         height: 0;
-        margin: 0.3076923em 0; // 4px / 13px
+        margin: 0.25em 0; // 4px / 16px
         border-width: 1px 0 0;
         font-size: 0;
         line-height: 0;
