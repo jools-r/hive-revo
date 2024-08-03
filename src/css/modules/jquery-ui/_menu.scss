@@ -74,7 +74,7 @@
 
     outline: 0;
     list-style: none;
-    font-size: 1rem; /* 1 */
+    font-size: 0.8125rem; /* 1 */
     line-height: setup.$base-line-height;
 
     @if not setup.$flat-theme {
@@ -113,7 +113,7 @@
 
     .ui-menu-item-wrapper {
         position: relative;
-        padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
+        padding: 0.25em 0.75em; // 4px / 16px + 12px / 16px
     }
 
     .ui-menu-divider {

@@ -125,7 +125,7 @@ hr {
     display: none;
     position: absolute;
     z-index: 100;
-    inline-size: 14.625em; // 234px / 16px
+    inline-size: 18em; // 234px / 13px
 
     .checkbox {
         margin: 0.125em; // 2px / 16px
@@ -845,7 +845,6 @@ hr {
 
 .txp-textarea-preview {
     margin-inline-start: 1em;
-    font-size: 0.8125em; /* 13px / 16px */
 }
 
 /**
