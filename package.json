@@ -45,7 +45,7 @@
         "parcel-resolver-ignore": "^2.2.0",
         "stylelint-config-standard-scss": "^13.1.0"
     },
-    "browserslist": ">= 0.25%, not dead",
+    "browserslist": ">= 0.25%, defaults",
     "staticFiles": [
         {
             "staticPath": "./src/theme",
