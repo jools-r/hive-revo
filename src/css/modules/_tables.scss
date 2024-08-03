@@ -136,9 +136,9 @@ td {
         );
 
         border-block-start: 1px solid var(--clr-brdr-lite);
-        border-inline-end: 1px solid var(--clr-brdr);
         border-block-end: 1px solid var(--clr-brdr-dark);
         border-inline-start: 0;
+        border-inline-end: 1px solid var(--clr-brdr);
 
         &:first-child {
             border-inline-start: 1px solid var(--clr-brdr);
@@ -163,8 +163,8 @@ td {
     .txp-list,
     .txp-list--no-options {
         thead th {
-            border-inline-end-color: var(--clr-brdr-dark);
             border-block-end-color: var(--clr-brdr-x-lite);
+            border-inline-end-color: var(--clr-brdr-dark);
 
             &:first-child {
                 border-inline-start-color: var(--clr-brdr-x-lite);
@@ -214,8 +214,8 @@ td {
                 z-index: 10;
                 top: 45%;
                 right: 0.3125em; // 5px / 16px
-                inline-size: 0;
                 block-size: 0;
+                inline-size: 0;
                 opacity: 0.6;
                 font-size: 16px;
 

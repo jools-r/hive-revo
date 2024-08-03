@@ -77,8 +77,8 @@ hr {
 
 .txp-accessibility {
     position: absolute;
-    inline-size: 1px;
     block-size: 1px;
+    inline-size: 1px;
     margin: -1px;
     padding: 0;
     overflow: hidden;
@@ -510,8 +510,8 @@ hr {
  */
 
 .txp-option-link {
-    font-size: 0.8125em;
     display: inline-block;
+    font-size: 0.8125em;
     white-space: nowrap;
 }
 
@@ -964,8 +964,8 @@ hr {
     z-index: 2;
     top: 50%;
     left: 50%;
-    inline-size: 16px;
     block-size: 16px;
+    inline-size: 16px;
     margin: -10px 0 0 -10px;
     border: 2px solid var(--clr-bkgd);
     border-radius: 50%;

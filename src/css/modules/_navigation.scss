@@ -144,8 +144,8 @@ button.txp-nav-toggle {
         z-index: 10;
         top: 1em;
         right: 0.5625em; // 9px / 16px
-        inline-size: 0;
         block-size: 0;
+        inline-size: 0;
         border: solid transparent;
         border-width: 0.25em 0.25em 0;
         border-block-start-color: var(--clr-text-btn);
@@ -283,8 +283,8 @@ button.txp-nav-toggle {
         z-index: 2;
         top: -0.5em; // 8px / 16px
         left: 0.75em; // 12px / 16px;
-        inline-size: 1em;
         block-size: 0.5em;
+        inline-size: 1em;
         background: url("../img/sprite.svg") no-repeat -12em 0;
         background-size: 13em 2em; // 208px / 16px + 32px / 16px
         font-size: 16px;

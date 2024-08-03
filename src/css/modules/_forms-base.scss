@@ -258,9 +258,9 @@ optgroup {
  */
 
 textarea {
-    inline-size: 100%;
     block-size: auto;
     min-block-size: 3em;
+    inline-size: 100%;
     vertical-align: top; /* 1 */
     tab-size: 4; /* 2 */
     resize: vertical; /* 3 */

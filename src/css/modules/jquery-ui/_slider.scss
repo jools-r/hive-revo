@@ -38,8 +38,8 @@
         position: absolute;
         z-index: 2;
         box-sizing: border-box;
-        inline-size: 20px;
         block-size: 20px;
+        inline-size: 20px;
         border: 1px solid var(--clr-brdr-x-dark);
         border-radius: 50%;
 
@@ -124,8 +124,8 @@
  */
 
 .ui-slider-vertical {
-    inline-size: 12px;
     block-size: 100px;
+    inline-size: 12px;
 
     .ui-slider-handle {
         left: -20px;

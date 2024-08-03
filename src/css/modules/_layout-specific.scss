@@ -66,10 +66,9 @@
         /* 2 */
         @include setup.hide-text;
 
-        inline-size: 16.5em; // 264px / 16px
         block-size: 3.375em; // 54px / 16px
-        margin-inline-end: auto;
-        margin-inline-start: auto;
+        inline-size: 16.5em; // 264px / 16px
+        margin-inline: auto;
         background: url("../img/textpattern.svg") no-repeat;
         background-size: 16.5em 3.375em;
         font-size: 16px;

@@ -46,63 +46,63 @@
 .ui-resizable-n {
     top: -5px;
     left: 0;
-    inline-size: 100%;
     block-size: 7px;
+    inline-size: 100%;
     cursor: n-resize;
 }
 
 .ui-resizable-s {
     bottom: -5px;
     left: 0;
-    inline-size: 100%;
     block-size: 7px;
+    inline-size: 100%;
     cursor: s-resize;
 }
 
 .ui-resizable-e {
     top: 0;
     right: -5px;
-    inline-size: 7px;
     block-size: 100%;
+    inline-size: 7px;
     cursor: e-resize;
 }
 
 .ui-resizable-w {
     top: 0;
     left: -5px;
-    inline-size: 7px;
     block-size: 100%;
+    inline-size: 7px;
     cursor: w-resize;
 }
 
 .ui-resizable-se {
     right: 1px;
     bottom: 1px;
-    inline-size: 12px;
     block-size: 12px;
+    inline-size: 12px;
     cursor: se-resize;
 }
 
 .ui-resizable-sw {
     bottom: -5px;
     left: -5px;
-    inline-size: 9px;
     block-size: 9px;
+    inline-size: 9px;
     cursor: sw-resize;
 }
 
 .ui-resizable-nw {
     top: -5px;
     left: -5px;
-    inline-size: 9px;
     block-size: 9px;
+    inline-size: 9px;
     cursor: nw-resize;
 }
 
 .ui-resizable-ne {
     top: -5px;
     right: -5px;
-    inline-size: 9px;
     block-size: 9px;
+    inline-size: 9px;
     cursor: ne-resize;
 }

@@ -59,15 +59,13 @@ summary {
     background: var(--clr-bkgd-box);
 
     @if not setup.$flat-theme {
-        border-inline-end: 1px solid var(--clr-brdr-x-lite);
-        border-inline-start: 1px solid var(--clr-brdr-x-lite);
+        border-inline: 1px solid var(--clr-brdr-x-lite);
 
         > div {
             border-block-end: 1px solid var(--clr-brdr-x-lite);
         }
     } @else {
-        border-inline-end: 1px solid var(--clr-brdr);
-        border-inline-start: 1px solid var(--clr-brdr);
+        border-inline: 1px solid var(--clr-brdr);
 
         > div {
             border-block-end: 1px solid var(--clr-brdr);
@@ -160,8 +158,8 @@ h3.txp-summary a {
         z-index: 10;
         top: 0.5625em; // 9px / 16px
         right: 0.625em; // 10px / 16px
-        inline-size: 0;
         block-size: 0;
+        inline-size: 0;
         border: solid transparent;
         border-width: 0.25em 0 0.25em 0.25em;
         border-inline-start-color: var(--clr-text);

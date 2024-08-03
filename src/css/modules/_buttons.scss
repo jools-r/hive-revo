@@ -43,8 +43,8 @@ input[type="button"],
     );
 
     display: inline-block;
-    inline-size: auto;
     block-size: auto;
+    inline-size: auto;
     padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     border: 1px solid var(--clr-btn-brdr);
     border-radius: setup.$border-radius;
