@@ -972,12 +972,12 @@ hr {
     background-color: var(--clr-bkgd);
     font-size: 13px;
 
-    .ui-icon {
-        margin: 0;
-    }
-
     @if not setup.$flat-theme {
         box-shadow: 0 0 0.5em hsl(0 0% 0% / 0.5);
+    }
+
+    .ui-icon {
+        margin: 0;
     }
 }
 

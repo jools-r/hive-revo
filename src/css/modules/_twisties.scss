@@ -55,6 +55,8 @@ summary {
 
 .txp-details {
     margin: 1em 0;
+    clear: both;
+    background: var(--clr-bkgd-box);
 
     @if not setup.$flat-theme {
         border-inline-end: 1px solid var(--clr-brdr-x-lite);
@@ -71,9 +73,6 @@ summary {
             border-block-end: 1px solid var(--clr-brdr);
         }
     }
-
-    clear: both;
-    background: var(--clr-bkgd-box);
 }
 
 @include setup.dark-mode {
@@ -92,6 +91,9 @@ summary {
 
     position: relative;
     margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2;
 
     @if not setup.$flat-theme {
         border-block-start: 1px solid var(--clr-brdr-lite);
@@ -100,10 +102,6 @@ summary {
         border-block-start: 1px solid var(--clr-brdr);
         border-block-end: 1px solid var(--clr-brdr);
     }
-
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 2;
 }
 
 @if not setup.$flat-theme {
@@ -145,14 +143,13 @@ h3.txp-summary a {
     overflow: hidden;
     color: var(--clr-text-promoted);
     font-size: 0.8125em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     &:hover {
         color: var(--clr-text-promoted);
         text-decoration: none;
     }
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
 
     &::after {
         @include setup.hide-text;
