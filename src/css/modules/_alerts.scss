@@ -209,15 +209,15 @@ li.information {
 
 .close {
     position: absolute;
+    top: 1.125em;
     right: 0;
-    bottom: 0.5em;
     inline-size: 2.5384615em;
     border-inline-start: 1px solid hsl(0 0% 100% / 0.66);
 
     span {
         position: absolute;
         top: 50%;
-        right: 0.5625em; // 9px / 16px
+        right: 0.5em; // 8px / 16px
         margin-block-start: -8px;
         opacity: 0.66;
 
