@@ -72,7 +72,7 @@
         display: block;
         margin: 0 0 1em;
         padding: 1px 0;
-        border-inline-size: 1px 0;
+        border-width: 1px 0;
         background: none;
     }
 }
@@ -89,7 +89,7 @@
     li {
         display: inline-block;
         block-size: 30px;
-        border-block-end-inline-size: 0;
+        border-block-end-width: 0;
         list-style: none;
         white-space: nowrap;
 
@@ -144,7 +144,7 @@
     }
 
     .ui-tabs-panel {
-        border-block-start-inline-size: 0;
+        border-block-start-width: 0;
     }
 }
 

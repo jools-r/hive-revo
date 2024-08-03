@@ -92,7 +92,7 @@
             inline-size: 0;
             block-size: 0;
             border: solid transparent;
-            border-inline-size: 1.5em 0 1.5em 0.75em;
+            border-width: 1.5em 0 1.5em 0.75em;
             border-inline-start-color: var(--clr-brdr);
             font-size: 16px;
         }
@@ -125,7 +125,7 @@
             right: 100%;
             left: auto;
             border: solid transparent;
-            border-inline-size: 1.5em 0.75em 1.5em 0;
+            border-width: 1.5em 0.75em 1.5em 0;
             border-inline-end-color: var(--clr-brdr);
         }
     }

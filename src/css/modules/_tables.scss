@@ -233,14 +233,14 @@ td {
         &.desc a::after {
             content: "\2193";
             border: solid transparent;
-            border-inline-size: 0.25em 0.25em 0;
+            border-width: 0.25em 0.25em 0;
             border-block-start-color: var(--clr-text);
         }
 
         &.asc a::after {
             content: "\2191";
             border: solid transparent;
-            border-inline-size: 0 0.25em 0.25em;
+            border-width: 0 0.25em 0.25em;
             border-block-end-color: var(--clr-text);
         }
     }
