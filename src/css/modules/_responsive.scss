@@ -194,6 +194,14 @@
 
 @media (max-width: setup.$break-small) {
     /**
+     * Bump up font-sizes.
+     */
+
+    :root {
+        --fs-sm: 16px;
+    }
+
+    /**
      * Prevent zoom upon form element focus.
      */
 
@@ -474,6 +482,10 @@
             padding: 0.25rem;
             font-size: 1rem;
             max-inline-size: 30rem;
+        }
+
+        select {
+            padding-inline-end: 1.30769em;
         }
     }
 
