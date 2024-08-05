@@ -43,6 +43,7 @@
         "parcel-reporter-clean-dist": "^1.0.4",
         "parcel-reporter-static-files-copy": "^1.5.3",
         "parcel-resolver-ignore": "^2.2.0",
+        "stylelint": "^16.8.1",
         "stylelint-config-standard-scss": "^13.1.0"
     },
     "browserslist": ">= 0.25%, defaults",
