@@ -39,6 +39,6 @@ body {
 .txp-body {
     flex-grow: 1;
     inline-size: 100%;
-    max-inline-size: setup.$container-max-inline-size;
+    max-inline-size: setup.$container-max-width;
     margin: 0 auto;
 }
