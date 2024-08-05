@@ -207,8 +207,19 @@
      * Prevent zoom upon form element focus.
      */
 
-    html {
-        font-size: 16px;
+    .txp-body,
+    .txp-view-site,
+    .txp-logout a,
+    .txp-nav > ul > li > a {
+        font-size: 1rem; // 16px
+    }
+
+    .txp-form-field-instructions {
+        font-size: var(--fs-xs);
+    }
+
+    .txp-logout a {
+        padding-block: 0.2em;
     }
 
     /**
@@ -295,9 +306,9 @@
         @include setup.hide-text;
 
         display: block;
-        block-size: 2em;
-        inline-size: 2em;
-        margin: 0.25em 0.5em 0;
+        block-size: 2rem;
+        inline-size: 2rem;
+        margin: 0.25rem 0.5rem 0;
         padding: 0;
         float: left;
         border: 0;
@@ -306,8 +317,8 @@
             border-radius: 0;
         }
 
-        background: transparent url("../img/sprite.svg") -10em 0;
-        background-size: 13em 2em; // 208px / 16px + 32px / 16px
+        background: transparent url("../img/sprite.svg") -10rem 0;
+        background-size: 13rem 2rem; // 208px / 16px + 32px / 16px
 
         &:focus {
             outline: thin solid var(--clr-focus);
@@ -480,7 +491,11 @@
         select,
         // This is an optional jQuery UI widget (not used in core layouts).
         .jquery-ui-controlgroup {
+            height: 2.4375rem;
             margin: 0;
+            padding: 0.25rem;
+            font-size: 1rem;
+            max-inline-size: 30rem;
         }
     }
 
@@ -562,6 +577,11 @@
         position: static;
         margin-block-start: 0;
         float: none;
+    }
+
+    [type=submit].publish {
+        padding: .6153846rem 1rem;
+        font-size: 1rem;
     }
 
     /**

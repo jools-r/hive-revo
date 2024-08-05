@@ -288,7 +288,7 @@ textarea.code {
 
 input[size="32"] {
     inline-size: 100%;
-    max-inline-size: 24.375em; // 390px / 16px
+    max-inline-size: 24.375rem; // 390px / 16px
 }
 
 input.input-large {
@@ -297,21 +297,21 @@ input.input-large {
 
 input.input-medium {
     inline-size: 50%;
-    max-inline-size: 11.75em; // 188px / 16px
+    max-inline-size: 11.75rem; // 188px / 16px
 }
 
 input.input-small {
     inline-size: 25%;
-    max-inline-size: 6.1875em; // 99px / 16px
+    max-inline-size: 6.1875rem; // 99px / 16px
 }
 
 input.input-xsmall {
     inline-size: 16%;
-    max-inline-size: 3.4375em; // 55px / 16px
+    max-inline-size: 3.4375rem; // 55px / 16px
 }
 
 input.input-number-max100 {
-    inline-size: 3.25em; // 52px / 16px
+    inline-size: 3.25rem; // 52px / 16px
 }
 
 /**
