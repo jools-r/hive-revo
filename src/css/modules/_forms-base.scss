@@ -55,7 +55,7 @@ textarea,
     color: var(--clr-text-form);
     font-family: inherit;
     font-size: 0.8125rem; /* 2 */
-    line-height: setup.$base-line-height;
+    line-height: var(--lh-base);
     vertical-align: baseline;
 }
 
@@ -84,13 +84,7 @@ textarea {
     block-size: 2.4375em; // 39px / 16px
     padding: 0.25em; // 4px / 16px
     border: 1px solid var(--clr-brdr);
-
-    @if setup.$border-radius > 0 {
-        border-radius: setup.$border-radius;
-    } @else {
-        border-radius: 0;
-    }
-
+    border-radius: var(--brdr-radius);
     background: var(--clr-bkgd-form);
     appearance: none; /* 1 */
 

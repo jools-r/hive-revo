@@ -6,10 +6,32 @@
 /* stylelint-disable declaration-colon-space-after */
 
 :root {
+    // page dimensions
+    --max-width-container: 94.5rem; // 1512px
+    --max-width-text-column: 50.375rem; // 806px : text intros + instruction hints
+    --max-width-prefs-column: 50.375rem; // 806px
+    --max-width-edit-panel: 48.375rem; // 774px
+    --max-width-setup-panel: 40.625rem; // 650px
+    --max-width-form-item: 24.375rem; // 390px : form label and input combo
+    --max-width-welcome: 16.5rem; // 264px : login and setup welcome
+    --gutter-outer: 4vw; // 16px -> 39px -> 4vw
+    --gutter-gap: 2em; // 2 x 13px = 26px
     // font families
     --font-body: system-ui, -apple-system, "Segoe UI", Helvetica, Arial,
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-code: Menlo, Consolas, Monaco, monospace;
+    // typography
+    --fs-base: 16px;
+    --fs-lg: 20px;
+    --fs-sm: 13px;
+    --fs-xs: 11px;
+    --lh-base: 1.5;
+    --lh-sm: 1.375;
+    --lh-xs: 1.15;
+    // border radius
+    --brdr-radius: 0.33rem;
+    --brdr-radius-sm: calc(var(--brdr-radius) / 2);
+    --brdr-radius-lg: calc(var(--brdr-radius) * 2.5);
     // text colours
     --clr-text: hsl(0 0% 20%);
     --clr-text-promoted: hsl(0 0% 0%);

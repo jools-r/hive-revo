@@ -14,7 +14,7 @@
 
 .setup,
 .login {
-    padding: 1em 4% 0;
+    padding: 1em var(--gutter-outer) 0;
 }
 
 /**
@@ -22,13 +22,13 @@
  */
 
 .txp-setup {
-    max-inline-size: setup.$setup-column;
+    max-inline-size: var(--max-width-setup-panel);
     margin: 1em auto;
 
     // Column inline-size of 'welcome' setup panel.
 
     .welcome & {
-        max-inline-size: 16.5em; // 264px / 16px
+        max-inline-size: var(--max-width-welcome);
     }
 }
 
@@ -40,10 +40,7 @@
     max-inline-size: 20.5em; // 264px / 13px
     margin: 1em auto;
     padding: 1em 2em 1px;
-
-    @if setup.$border-radius > 0 {
-        border-radius: 1em;
-    }
+    border-radius: var(--brdr-radius-lg);
 
     @if not setup.$flat-theme {
         box-shadow: 0 0 1em hsl(0 0% 0% / 0.3);
@@ -140,8 +137,8 @@ body.darkmode.login {
         margin: 2em 0 0;
         padding: 0;
         border-block-end: 1px solid var(--clr-brdr);
-        font-size: setup.$small-font-size;
-        line-height: setup.$small-line-height;
+        font-size: var(--fs-sm);
+        line-height: var(--lh-sm);
     }
 
     li {

@@ -101,11 +101,7 @@
         block-size: 1.8em;
         inline-size: 1.8em;
         margin-block-start: -0.9em;
-
-        @if setup.$border-radius > 0 {
-            border-radius: setup.$border-radius;
-        }
-
+        border-radius: var(--brdr-radius);
         background-color: transparent;
     }
 

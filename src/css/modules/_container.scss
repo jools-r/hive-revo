@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     min-block-size: 100vh;
     margin: 0; /* 2 */
-    padding: 4em 4% 0;
+    padding: 4em var(--gutter-outer) 0;
     background: var(--clr-bkgd);
     color: var(--clr-text);
     overscroll-behavior: none;
@@ -39,6 +39,6 @@ body {
 .txp-body {
     flex-grow: 1;
     inline-size: 100%;
-    max-inline-size: setup.$container-max-width;
+    max-inline-size: var(--max-width-container);
     margin: 0 auto;
 }

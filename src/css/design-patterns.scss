@@ -189,7 +189,7 @@ h2 span {
 
 @media (min-width: setup.$break-large) {
     body {
-        padding: 0 4% 1em;
+        padding: 0 var(--gutter-outer) 1em;
     }
 
     /**

@@ -75,7 +75,7 @@
  */
 
 .txp-layout-textbox {
-    max-inline-size: setup.$text-column;
+    max-inline-size: var(--max-width-text-column);
 }
 
 /* Inline grids

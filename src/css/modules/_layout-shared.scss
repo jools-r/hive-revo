@@ -181,14 +181,10 @@ hr {
 
 .txp-search-input {
     max-inline-size: calc(100% - 5.5rem);
-
-    @if setup.$border-radius > 0 {
-        border-radius: setup.$border-radius 0 0 setup.$border-radius;
-
-        [dir="rtl"] & {
-            border-radius: 0 setup.$border-radius setup.$border-radius 0;
-        }
-    }
+    border-start-start-radius: var(--brdr-radius);
+    border-start-end-radius: 0;
+    border-end-start-radius: var(--brdr-radius);
+    border-end-end-radius: 0;
 }
 
 .txp-search-clear {
@@ -630,7 +626,7 @@ hr {
 
 .txp-edit {
     position: relative;
-    max-inline-size: (setup.$text-column - 2em);
+    max-inline-size: var(--max-width-edit-panel);
     margin: 0 auto;
     padding: 1em 1em 1px;
     clear: both;
@@ -860,7 +856,7 @@ hr {
  */
 
 .txp-tabs-vertical-group {
-    max-inline-size: setup.$text-column;
+    max-inline-size: var(--max-width-prefs-column);
 }
 
 /**
@@ -912,12 +908,8 @@ hr {
     margin: -1.25em 0 1.75em;
     padding: 1px 1em 0;
     border: 1px solid var(--clr-brdr-lite);
+    border-radius: 0 0 var(--brdr-radius) var(--brdr-radius);
     border-block-start: 0;
-
-    @if setup.$border-radius > 0 {
-        border-radius: 0 0 setup.$border-radius setup.$border-radius;
-    }
-
     background: var(--clr-bkgd);
 
     @if not setup.$flat-theme {

@@ -43,15 +43,21 @@
 }
 
 .ui-selectmenu-button:not(.ui-controlgroup-item) {
-    border-radius: setup.$border-radius;
+    border-radius: var(--brdr-radius);
 }
 
 .ui-selectmenu-button.ui-controlgroup-item.ui-corner-tr {
-    border-radius: 0 setup.$border-radius setup.$border-radius 0;
+    border-start-start-radius: 0;
+    border-start-end-radius: var(--brdr-radius);
+    border-end-start-radius: 0;
+    border-end-end-radius: var(--brdr-radius);
 }
 
 .ui-selectmenu-button.ui-controlgroup-item.ui-corner-tl {
-    border-radius: setup.$border-radius 0 0 setup.$border-radius;
+    border-start-start-radius: var(--brdr-radius);
+    border-start-end-radius: 0;
+    border-end-start-radius: var(--brdr-radius);
+    border-end-end-radius: 0;
 }
 
 .ui-selectmenu-icon {
@@ -87,7 +93,7 @@
             border-block-start: 1px solid var(--clr-brdr);
             font-size: 1rem;
             font-weight: 700;
-            line-height: setup.$base-line-height;
+            line-height: var(--lh-base);
 
             &:first-child {
                 margin: 0;
@@ -99,20 +105,6 @@
 
 .ui-selectmenu-open {
     display: block;
-}
-
-/**
- * Selectmenu RTL support.
- */
-
-[dir="rtl"] {
-    .ui-selectmenu-button.ui-controlgroup-item.ui-corner-tr {
-        border-radius: setup.$border-radius 0 0 setup.$border-radius;
-    }
-
-    .ui-selectmenu-button.ui-controlgroup-item.ui-corner-tl {
-        border-radius: 0 setup.$border-radius setup.$border-radius 0;
-    }
 }
 
 /**

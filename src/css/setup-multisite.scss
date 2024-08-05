@@ -21,11 +21,11 @@ html {
 }
 
 .setup {
-    padding: 1em 4% 0;
+    padding: 1em var(--gutter-outer) 0;
 }
 
 .txp-setup {
-    max-inline-size: setup.$setup-column;
+    max-inline-size: var(--max-width-setup-panel);
     margin: 1em auto;
 }
 

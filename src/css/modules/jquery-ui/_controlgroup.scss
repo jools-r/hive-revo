@@ -42,7 +42,7 @@
         padding: 0.4em 1em;
 
         span {
-            font-size: setup.$small-font-size;
+            font-size: var(--fs-sm);
         }
     }
 

@@ -37,7 +37,7 @@
     color: var(--clr-text-btn);
     font-family: inherit;
     font-size: inherit; /* 2 */
-    line-height: setup.$base-line-height;
+    line-height: var(--lh-base);
     vertical-align: baseline;
     text-align: center;
     appearance: none; /* 3 */
@@ -116,26 +116,24 @@ input.ui-button.ui-button-icon-only {
     text-indent: 0;
 }
 
-@if setup.$border-radius > 0 {
-    .ui-button.ui-corner-all {
-        border-radius: setup.$border-radius;
-    }
+/* :where to counteract higher specifity of rtl lang variants */
 
-    .ui-button.ui-corner-right {
-        border-radius: 0 setup.$border-radius setup.$border-radius 0;
+:where(.ui-button.ui-corner-all) {
+    border-radius: var(--brdr-radius);
+}
 
-        [dir="rtl"] & {
-            border-radius: setup.$border-radius 0 0 setup.$border-radius;
-        }
-    }
+:where(.ui-button.ui-corner-right) {
+    border-start-start-radius: 0;
+    border-start-end-radius: var(--brdr-radius);
+    border-end-start-radius: 0;
+    border-end-end-radius: var(--brdr-radius);
+}
 
-    .ui-button.ui-corner-left {
-        border-radius: setup.$border-radius 0 0 setup.$border-radius;
-
-        [dir="rtl"] & {
-            border-radius: 0 setup.$border-radius setup.$border-radius 0;
-        }
-    }
+:where(.ui-button.ui-corner-left) {
+    border-start-start-radius: var(--brdr-radius);
+    border-start-end-radius: 0;
+    border-end-start-radius: var(--brdr-radius);
+    border-end-end-radius: 0;
 }
 
 /**

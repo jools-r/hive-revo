@@ -9,18 +9,8 @@
      * Adjust right/left padding of body.
      */
 
-    body {
-        padding: 3.25em 2.4375em 0; // 52px / 16px + 39px / 16px
-    }
-
-    .setup,
-    .login {
-        padding: 0.8125em 2.4375em 0; // 13px / 16px + 39px / 16px
-    }
-
-    #messagepane {
-        right: 2.4375em;
-        left: 2.4375em;
+    :root {
+        --gutter-outer: 2.4375em;
     }
 
     /**
@@ -226,18 +216,13 @@
      * Adjust right/left padding of body.
      */
 
-    body {
-        padding: 4em 1em 0; // 64px + 16px
+    :root {
+        --gutter-outer: 1em;
     }
 
     .setup,
     .login {
-        padding: 0 1em; // 16px
-    }
-
-    #messagepane {
-        right: 1em;
-        left: 1em;
+        padding-block: 0;
     }
 
     .txp-login {
@@ -312,11 +297,7 @@
         padding: 0;
         float: left;
         border: 0;
-
-        @if setup.$border-radius > 0 {
-            border-radius: 0;
-        }
-
+        border-radius: 0;
         background: transparent url("../img/sprite.svg") -10rem 0;
         background-size: 13rem 2rem; // 208px / 16px + 32px / 16px
 
@@ -414,10 +395,7 @@
         position: static;
         min-inline-size: 0;
         border: 0;
-
-        @if setup.$border-radius > 0 {
-            border-radius: 0;
-        }
+        border-radius: 0;
 
         @if not setup.$flat-theme {
             box-shadow: none;

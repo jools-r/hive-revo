@@ -47,7 +47,7 @@ input[type="button"],
     inline-size: auto;
     padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     border: 1px solid var(--clr-btn-brdr);
-    border-radius: setup.$border-radius;
+    border-radius: var(--brdr-radius);
     background-clip: padding-box;
     color: var(--clr-text-btn);
     font-weight: 400;
@@ -216,11 +216,7 @@ button.destroy {
     box-sizing: border-box;
     padding: 0.25em 0.5em; // 4px / 16px + 8px / 16px
     border: 1px solid;
-
-    @if setup.$border-radius > 0 {
-        border-radius: setup.$border-radius;
-    }
-
+    border-radius: var(--brdr-radius);
     background-clip: padding-box;
 }
 
@@ -245,7 +241,6 @@ ul.nav-tertiary {
     }
 }
 
-@if setup.$border-radius > 0 {
     .nav-tertiary {
         > * {
             border-radius: 0;
@@ -254,30 +249,21 @@ ul.nav-tertiary {
         > :first-child,
         > :first-child > a,
         > :first-child > span {
-            border-radius: setup.$border-radius 0 0 setup.$border-radius;
+            border-start-start-radius: var(--brdr-radius);
+            border-start-end-radius: 0;
+            border-end-start-radius: var(--brdr-radius);
+            border-end-end-radius: 0;
         }
 
         > :last-child,
         > :last-child > a,
         > :last-child > span {
-            border-radius: 0 setup.$border-radius setup.$border-radius 0;
+            border-start-start-radius: 0;
+            border-start-end-radius: var(--brdr-radius);
+            border-end-start-radius: 0;
+            border-end-end-radius: var(--brdr-radius);
         }
     }
-
-    [dir="rtl"] .nav-tertiary {
-        > :first-child,
-        > :first-child > a,
-        > :first-child > span {
-            border-radius: 0 setup.$border-radius setup.$border-radius 0;
-        }
-
-        > :last-child,
-        > :last-child > a,
-        > :last-child > span {
-            border-radius: setup.$border-radius 0 0 setup.$border-radius;
-        }
-    }
-}
 
 /**
  * Indication of the currently active `.nav-tertiary` button.
@@ -329,13 +315,10 @@ ul.nav-tertiary {
 
 .txp-search button.txp-search-button {
     padding-inline: 1.5em;
+    border-radius: 0;
 
-    @if setup.$border-radius > 0 {
-        border-radius: 0;
-
-        [dir="rtl"] & {
-            border-radius: 0; /* 1 */
-        }
+    [dir="rtl"] & {
+        border-radius: 0; /* 1 */
     }
 }
 
