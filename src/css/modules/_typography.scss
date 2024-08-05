@@ -24,10 +24,6 @@ body {
     font-family: var(--font-body);
 }
 
-.txp-body {
-    font-size: 0.8125em; // 13px / 16px
-}
-
 /**
  * Harmonize size, style and vertical margin of headings.
  */
@@ -56,11 +52,11 @@ h6 {
 
 h1 {
     margin: 0.25em 0 0.5em; // 6.5px / 26px, 13px / 26px
-    font-size: 1.625rem; // 26px / 16px
-    line-height: 1.25;
+    font-size: var(--fs-title);
+    line-height: var(--lh-sm);
 
     .pophelp {
-        font-size: 1rem;
+        font-size: var(--fs-base);
     }
 }
 
@@ -82,7 +78,7 @@ h2 {
     line-height: 1.3333333; // 24px / 18px
 
     .pophelp {
-        font-size: 1rem;
+        font-size: var(--fs-base);
     }
 }
 
@@ -104,7 +100,7 @@ h4,
 h5,
 h6 {
     margin: 1em 0;
-    font-size: 1rem;
+    font-size: var(--fs-base);
 }
 
 /**
@@ -253,8 +249,8 @@ tfoot,
 .footnote,
 .txp-form-field-instructions,
 .txp-footer {
-    font-size: var(--fs-sm);
-    line-height: var(--lh-sm);
+    font-size: var(--fs-supporting-text);
+    line-height: var(--lh-md);
 }
 
 figcaption,

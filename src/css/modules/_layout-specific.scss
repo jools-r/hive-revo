@@ -68,7 +68,7 @@
         margin-inline: auto;
         background: url("../img/textpattern.svg") no-repeat;
         background-size: 16.5em 3.375em;
-        font-size: 16px;
+        font-size: var(--fs-base);
     }
 
     [type="submit"] {
@@ -138,7 +138,7 @@ body.darkmode.login {
         padding: 0;
         border-block-end: 1px solid var(--clr-brdr);
         font-size: var(--fs-sm);
-        line-height: var(--lh-sm);
+        line-height: var(--lh-md);
     }
 
     li {
@@ -223,17 +223,17 @@ body.darkmode.login {
 #main_content {
     .text {
         input {
-            font-size: 1rem; // 16px / 16px
+            font-size: var(--fs-input-lg);
         }
 
         textarea {
-            font-size: 1rem; // 16px / 16px
-            line-height: 1.5; // 24px / 16px
+            font-size: var(--fs-input-lg);
+            line-height: var(--lh-base);
         }
 
         .title input {
             inline-size: 100%;
-            font-size: 1.25rem; // 20px / 16px
+            font-size: var(--fs-lg);
             font-weight: 700;
         }
     }
@@ -307,6 +307,13 @@ body.darkmode.login {
     display: block;
 }
 
+/* Content -> Category panel - additional layout
+   ========================================================================== */
+
+.category-tree {
+    font-size: var(--fs-sm);
+}
+
 /* Content -> Comments panel - additional layout
    ========================================================================== */
 
@@ -329,6 +336,7 @@ body.darkmode.login {
 
 .presentation textarea.code {
     block-size: 64vh;
+    font-size: var(--fs-input-code);
 }
 
 /* Presentation -> Forms panel - additional layout
@@ -347,6 +355,15 @@ body.darkmode.login {
 #page-form .type {
     display: inline-block;
     margin: 0;
+}
+
+/* Admin -> Diag, language + text panel - additional styles
+   ========================================================================== */
+
+.txp-layout-textbox,
+.txp-grid-lang,
+#diag_container {
+    font-size: var(--fs-sm);
 }
 
 /* Admin -> Plugins panel - additional layout

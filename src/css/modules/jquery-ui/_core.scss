@@ -40,7 +40,7 @@
     border: 0;
     outline: 0;
     list-style: none;
-    font-size: 1rem;
+    font-size: var(--fs-base);
     line-height: var(--lh-base);
     text-decoration: none;
 }
@@ -85,7 +85,7 @@
  */
 
 .ui-widget .ui-widget {
-    font-size: 1rem;
+    font-size: var(--fs-base);
 }
 
 /**

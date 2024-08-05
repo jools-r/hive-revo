@@ -160,6 +160,7 @@ hr {
     position: relative;
     justify-content: flex-end;
     margin: 1em 0;
+    font-size: var(--fs-action);
     float: right; // TODO: Use `float: inline-end` when browser support is better.
 
     // Ensure the 2 buttons stay together.
@@ -310,6 +311,7 @@ hr {
     position: relative;
     flex-grow: 1;
     margin: 1em 0;
+    font-size: var(--fs-action);
     text-align: end;
 
     > ul {
@@ -344,13 +346,17 @@ hr {
  * </p>
  */
 
-.txp-actions > * {
-    display: inline-block;
-    margin: 0.5em 0 0;
-    margin-inline-end: 1em;
+.txp-actions {
+    font-size: var(--fs-action);
 
-    &:last-child {
-        margin-inline-end: 0;
+    > * {
+        display: inline-block;
+        margin: 0.5em 0 0;
+        margin-inline-end: 1em;
+
+        &:last-child {
+            margin-inline-end: 0;
+        }
     }
 }
 
@@ -360,7 +366,7 @@ hr {
 
 .ui-dialog .txp-actions {
     margin-block-start: 0;
-    font-size: 0.8125em; // 13px / 16px
+    font-size: var(--fs-action);
 }
 
 /**
@@ -508,6 +514,8 @@ hr {
 
 .txp-option-link {
     display: inline-block;
+    margin-inline: 0.25rem;
+    font-size: var(--fs-sm);
     white-space: nowrap;
 }
 
@@ -535,7 +543,7 @@ hr {
  */
 
 .restricted-area {
-    font-size: 1.625rem; // 26px / 16px
+    font-size: var(--fs-title);
     text-align: center;
 }
 
@@ -594,6 +602,7 @@ hr {
 
 .prev-next {
     margin: 1em 0;
+    font-size: var(--fs-action);
 
     form {
         display: inline-block;
@@ -692,7 +701,7 @@ hr {
  */
 
 .txp-form-field {
-    margin: 1em 0;
+    margin: 0.75rem 0;
     vertical-align: top;
 
     .txp-edit &,
@@ -765,6 +774,7 @@ hr {
     .txp-form-field-value {
         flex: 1 1 0%;
         min-block-size: 1.875em; // 30px / 16px
+        font-size: var(--fs-input);
     }
 }
 
@@ -836,6 +846,7 @@ hr {
     position: relative;
     z-index: 2;
     margin: 0 1px;
+    font-size: var(--fs-action);
     float: right; // TODO: Use `float: inline-end` when browser support is better.
 }
 
@@ -961,7 +972,7 @@ hr {
     border: 2px solid var(--clr-bkgd);
     border-radius: 50%;
     background-color: var(--clr-bkgd);
-    font-size: 13px;
+    font-size: var(--fs-sm);
 
     @if not setup.$flat-theme {
         box-shadow: 0 0 0.5em hsl(0 0% 0% / 0.5);

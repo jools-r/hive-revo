@@ -154,6 +154,10 @@ input.ui-button.ui-button-icon-only {
     white-space: nowrap;
 }
 
+.no-ui-button {
+    font-size: var(--fs-sm);
+}
+
 input.ui-button.ui-icon-notext .ui-icon {
     padding: 0.4em 1em;
     text-indent: 0;

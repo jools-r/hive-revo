@@ -71,8 +71,9 @@ thead th {
 
 th,
 td {
-    padding: 0.3125em 0.8125em; // 5px / 16px + 13px / 16px
+    padding: 0.3125rem 0.8125rem; // 5px / 16px + 13px / 16px
     vertical-align: middle;
+    font-size: var(--fs-sm);
     text-align: start;
 }
 
@@ -217,7 +218,7 @@ td {
                 block-size: 0;
                 inline-size: 0;
                 opacity: 0.6;
-                font-size: 16px;
+                font-size: var(--fs-base);
 
                 [dir="rtl"] & {
                     right: auto;

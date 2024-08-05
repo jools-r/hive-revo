@@ -74,7 +74,7 @@
 
     outline: 0;
     list-style: none;
-    font-size: 0.8125rem; /* 1 */
+    font-size: var(--fs-sm); /* 1 */
     line-height: var(--lh-base);
 
     @if not setup.$flat-theme {

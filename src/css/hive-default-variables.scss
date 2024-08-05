@@ -16,18 +16,29 @@
     --max-width-welcome: 16.5rem; // 264px : login and setup welcome
     --gutter-outer: 4vw; // 16px -> 39px -> 4vw
     --gutter-gap: 2em; // 2 x 13px = 26px
+    --menu-height: 3rem; // top bar menu
     // font families
     --font-body: system-ui, -apple-system, "Segoe UI", Helvetica, Arial,
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-code: Menlo, Consolas, Monaco, monospace;
     // typography
     --fs-base: 16px;
+    --fs-xl: 26px;
     --fs-lg: 20px;
     --fs-sm: 13px;
     --fs-xs: 11px;
     --lh-base: 1.5;
-    --lh-sm: 1.375;
+    --lh-md: 1.375;
+    --lh-sm: 1.25;
     --lh-xs: 1.15;
+    // ui font sizes
+    --fs-title: var(--fs-xl);
+    --fs-input: var(--fs-sm);
+    --fs-input-lg: var(--fs-base);
+    --fs-input-code: var(--fs-sm);
+    --fs-label: var(--fs-sm);
+    --fs-supporting-text: var(--fs-xs);
+    --fs-action: var(--fs-sm);
     // border radius
     --brdr-radius: 0.33rem;
     --brdr-radius-sm: calc(var(--brdr-radius) / 2);

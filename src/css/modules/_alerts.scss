@@ -77,6 +77,7 @@ li.information {
     clear: both;
     border: 1px solid;
     border-radius: var(--brdr-radius);
+    font-size: var(--fs-sm);
 
     &.success {
         border-color: var(--clr-success-brdr);
@@ -149,6 +150,7 @@ li.information {
             box-shadow: var(--standard-shadow);
         }
 
+        font-size: var(--fs-action);
         text-align: left;
 
         &.success {

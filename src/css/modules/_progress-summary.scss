@@ -71,7 +71,7 @@
             border: 1px solid var(--clr-bkgd);
             border-radius: 50%;
             background-color: var(--clr-brdr);
-            font-size: 1rem; // 16px / 16px
+            font-size: var(--fs-base);
             font-weight: 700;
             text-align: center;
             counter-increment: step; // increment the step on each occurance of this (pseudo) element
@@ -93,7 +93,7 @@
             border: solid transparent;
             border-width: 1.5em 0 1.5em 0.75em;
             border-inline-start-color: var(--clr-brdr);
-            font-size: 16px;
+            font-size: var(--fs-base);
         }
     }
 

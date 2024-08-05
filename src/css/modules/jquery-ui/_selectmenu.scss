@@ -91,7 +91,7 @@
             margin: 0.5em 0 0;
             padding: 2px 0.5em; // 8px / 16px
             border-block-start: 1px solid var(--clr-brdr);
-            font-size: 1rem;
+            font-size: var(--fs-base);
             font-weight: 700;
             line-height: var(--lh-base);
 
