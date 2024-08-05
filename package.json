@@ -3,7 +3,7 @@
     "version": "2024.1",
     "description": "Karaka Textpattern CMS admin theme",
     "author": "Jools R",
-	"homepage": "https://github.com/jools-r/textpattern-karaka-admin-theme",
+    "homepage": "https://github.com/jools-r/textpattern-karaka-admin-theme",
     "license": "ISC",
     "config": {
         "dirs": {
@@ -24,7 +24,7 @@
         }
     },
     "scripts": {
-		"buildmanifest": "jq --arg ver \"$npm_package_version\" --arg name \"$npm_package_name\" --arg desc \"$npm_package_description\" --arg author \"$npm_package_author\" --arg url \"$npm_package_homepage\" '.version = $ver | .title = $name | .description = $desc | .author = $author | .author_uri = $url' ./src/theme/manifest.json > $npm_package_config_dirs_build/manifest.json",
+        "buildmanifest": "jq --arg ver \"$npm_package_version\" --arg name \"$npm_package_name\" --arg desc \"$npm_package_description\" --arg author \"$npm_package_author\" --arg url \"$npm_package_homepage\" '.version = $ver | .title = $name | .description = $desc | .author = $author | .author_uri = $url' ./src/theme/manifest.json > $npm_package_config_dirs_build/manifest.json",
         "clean": "rm -rf $npm_package_config_dirs_build && rm -rf .parcel-cache",
         "minifyjs": "esbuild src/assets/js/main.js --minify --outfile=$npm_package_config_dirs_build/assets/js/main.js",
         "prodcss": "sed -e '$ d' assets/css/textpattern.css > assets/css/textpattern.min.css",
@@ -38,7 +38,7 @@
         "@parcel/config-default": "^2.12.0",
         "@parcel/resolver-glob": "^2.12.0",
         "@parcel/transformer-sass": "^2.12.0",
-        "esbuild": "^0.21.5",
+        "esbuild": "^0.23.0",
         "parcel": "^2.12.0",
         "parcel-reporter-clean-dist": "^1.0.4",
         "parcel-reporter-static-files-copy": "^1.5.3",
@@ -65,6 +65,19 @@
         "drafts": {
             "nesting": true,
             "customMedia": true
+        }
+    },
+    "pnpm": {
+        "peerDependencyRules": {
+            "allowedVersions": {
+                "svgo": "2.8.0"
+            },
+            "ignoreMissing": [
+                "svgo@^3.0.2"
+            ]
+        },
+        "allowedDeprecatedVersions": {
+            "stable": "0.1.8"
         }
     }
 }
