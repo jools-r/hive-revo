@@ -24,18 +24,23 @@
     );
 
     display: flex;
+    align-items: center;
     position: fixed;
     z-index: 1000;
     top: 0;
     right: 0;
     left: 0;
-    block-size: 2.1875em; // 35px / 16px
+    margin: 0;
     padding: 0 var(--gutter-outer);
     border-block-start: 1px solid var(--clr-accent-grad-to);
     border-block-end: 1px solid var(--clr-accent-dark);
 
     @if not setup.$flat-theme {
         box-shadow: 0 0.2em 0.25em hsl(0 0% 0% / 0.15);
+    }
+
+    p {
+        margin-block: 0;
     }
 }
 
@@ -64,7 +69,7 @@
     flex: none;
     block-size: 2em; // 32px / 16px
     inline-size: 8.125em; // 130px / 16px
-    margin: 0.0625em 0 0; // 1px / 16px, 8px / 16px
+    margin: 0;
     margin-inline-end: 0.5em; // 8px / 16px
     background: url("../img/sprite.svg") no-repeat;
     background-size: 13em 2em; // 208px / 16px + 32px / 16px
@@ -100,8 +105,8 @@
     margin: 0 1em;
     padding: 0 1px;
     overflow: hidden;
-    font-size: 0.8125em; // 13px / 16px
-    line-height: 2.69231; // 35px / 13px
+    font-size: var(--fs-menu);
+    line-height: var(--menu-height);
     white-space: nowrap;
 
     span {
@@ -139,10 +144,8 @@
     a {
         display: block;
         position: relative;
-        top: 50%;
         block-size: 1.5em;
         inline-size: 1.5em;
-        transform: translateY(-50%);
         border: 1px solid var(--clr-accent-dark);
         border-radius: 0.75em;
         background: hsl(0 0% 100% / 0.6);
@@ -183,7 +186,5 @@
  */
 
 .txp-logout {
-    position: relative;
-    top: -0.6875em; // 11px / 16px
     flex: none;
 }

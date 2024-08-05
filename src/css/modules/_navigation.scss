@@ -40,7 +40,7 @@ button.txp-nav-toggle {
 
     a {
         color: var(--clr-text-btn);
-        font-size: var(--fs-sm);
+        font-size: var(--fs-menu);
 
         &:hover {
             text-decoration: none;
@@ -108,8 +108,8 @@ button.txp-nav-toggle {
         display: block;
         padding: 0 1em;
         color: var(--clr-text-btn);
-        font-size: var(--fs-sm);
-        line-height: 2.69231; // 35px / 13px
+        font-size: var(--fs-menu);
+        line-height: var(--menu-height);
         text-decoration: none;
 
         &:hover {
@@ -131,19 +131,18 @@ button.txp-nav-toggle {
  */
 
 .txp-nav > ul > li > a.dropdown-toggle {
-    position: relative;
+    display: flex;
+    align-items: center;
     padding: 0 1em;
-    padding-inline-end: 1.6125em;
+    padding-inline-end: 1em;
 
     &::after {
         @include setup.hide-text;
 
         content: "\2193";
         display: block;
-        position: absolute;
         z-index: 10;
-        top: 1em;
-        right: 0.5625em; // 9px / 16px
+        margin-inline-start: 0.375rem;
         block-size: 0;
         inline-size: 0;
         border: solid transparent;
@@ -229,7 +228,7 @@ button.txp-nav-toggle {
     display: none;
     position: absolute;
     z-index: 20000;
-    top: 3em;
+    top: calc(var(--menu-height) + .75em);
     left: 0;
     flex: none;
     min-inline-size: 12em;
