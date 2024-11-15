@@ -1,9 +1,9 @@
 {
-    "name": "Karaka",
+    "name": "Hive-Revo",
     "version": "2024.1",
-    "description": "Karaka Textpattern CMS admin theme",
+    "description": "Hive Textpattern CMS admin theme with CSS Variables",
     "author": "Jools R",
-    "homepage": "https://github.com/jools-r/textpattern-karaka-admin-theme",
+    "homepage": "https://github.com/jools-r/hive-revo",
     "license": "ISC",
     "config": {
         "dirs": {
